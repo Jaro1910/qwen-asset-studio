@@ -1,0 +1,129 @@
+{
+  "global": {
+    "note": "KAMERA: sprite bojowy = 3/4 top-down jak jednostki; portret = klasyczny portret na wprost oczu. WODZOWIE v4: sprite bojowy = strip DOKLADNIE 4 klatek idle z jawnymi stanami (oddech/plaszcz), klatka 3:4. Portrety pozostaja pojedynczymi obrazami 1:1. negative ' '. ",
+    "style_reference": "Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (forest green, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, high readability on mobile, crisp clean silhouettes, consistent lighting from upper left.",
+    "negative": " "
+  },
+  "assets": [
+    {
+      "id": "hero_samo_portrait",
+      "category": "hero_portrait",
+      "hero": "samo",
+      "aspect_ratio": "1:1",
+      "resolution": "768x768",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: classic character portrait - eye-level camera, head and shoulders in three-quarter view, no top-down angle. A heroic head-and-shoulders portrait of SAMO the Kniaz, Unifier of the Slavic peoples, elected war-leader (623-659), for a mobile game character card, facing slightly to one side with a strong three-quarter view, dramatic soft lighting, centered and fully visible with an even margin. a commanding middle-aged Slavic chieftain, long braided brown hair and beard with a single grey streak, weathered noble face, wearing layered leather and fur over a green tunic, bronze torc of leadership, a bear-pelt mantle, carrying a decorated round shield and a broad sword. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, heroic Slavic atmosphere, weathered materials, crisp silhouette readable at small mobile size. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "hero_samo_sprite",
+      "category": "hero_sprite",
+      "hero": "samo",
+      "aspect_ratio": "3:4",
+      "resolution": "1536x512",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: three-quarter top-down game view - the camera is raised about 45 degrees above the subject, looking down at it from the front-right like a classic isometric strategy game; the subject's TOP surfaces and FRONT side are both clearly visible at the same time, a ground ellipse sits beneath it, no horizon, no sky, never a straight-on front view, never a worm's-eye view, never a flat overhead map view. The exact same camera in every frame and every asset of this set. A horizontal sprite sheet strip of EXACTLY 4 equal frames in one row, filling the image edge to edge, no gaps, no borders, no numbers, no labels. EVERY frame shows THE SAME Slavic hero described below from the identical camera angle, identical position and identical scale. The 4 frames are 4 precisely defined states: FRAME 1: standing at rest, chest mid-breath-in, cloak and hair hanging calm. FRAME 2: breath released, cloak and hair swaying gently to one side, weapon hand relaxed. FRAME 3: chest rising with a new breath, grip on the weapon visibly tightening, chin lifting slightly. FRAME 4: breath released, cloak and hair swaying to the other side - frames 1-2-3-4 loop as a calm idle animation. A full-body battle sprite of SAMO the Kniaz, Unifier of the Slavic peoples, elected war-leader (623-659) for a mobile tower defense game, seen from a 3/4 top-down angle, FACING RIGHT in a heroic ready stance, decorated exclusively with pagan Slavic symbols - solar wheels, thunder marks, braided knotwork and animal totems - as the only ornamentation, full body visible, centered with an even margin around it. a commanding middle-aged Slavic chieftain, long braided brown hair and beard with a single grey streak, weathered noble face, wearing layered leather and fur over a green tunic, bronze torc of leadership, a bear-pelt mantle, carrying a decorated round shield and a broad sword. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, heroic Slavic atmosphere, weathered materials, crisp silhouette readable at small mobile size. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 4,
+      "frame_states": [
+        "standing at rest, chest mid-breath-in, cloak and hair hanging calm",
+        "breath released, cloak and hair swaying gently to one side, weapon hand relaxed",
+        "chest rising with a new breath, grip on the weapon visibly tightening, chin lifting slightly",
+        "breath released, cloak and hair swaying to the other side"
+      ],
+      "frame_resolution": "384x512"
+    },
+    {
+      "id": "hero_warcislaw_portrait",
+      "category": "hero_portrait",
+      "hero": "warcislaw",
+      "aspect_ratio": "1:1",
+      "resolution": "768x768",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: classic character portrait - eye-level camera, head and shoulders in three-quarter view, no top-down angle. A heroic head-and-shoulders portrait of WARCISLAW the Wojewoda Druzyny, warrior of the arch-people, leader of the elite retinue, for a mobile game character card, facing slightly to one side with a strong three-quarter view, dramatic soft lighting, centered and fully visible with an even margin. a powerful battle-scarred Slavic warrior in his prime, shaved sides with a warrior's topknot, thick moustache, hardened muscular build in scale armor and iron-studded leather, wolf-fur shoulder, wielding a heavy bearded axe and a spiked shield, fierce charging spirit. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, heroic Slavic atmosphere, weathered materials, crisp silhouette readable at small mobile size. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "hero_warcislaw_sprite",
+      "category": "hero_sprite",
+      "hero": "warcislaw",
+      "aspect_ratio": "3:4",
+      "resolution": "1536x512",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: three-quarter top-down game view - the camera is raised about 45 degrees above the subject, looking down at it from the front-right like a classic isometric strategy game; the subject's TOP surfaces and FRONT side are both clearly visible at the same time, a ground ellipse sits beneath it, no horizon, no sky, never a straight-on front view, never a worm's-eye view, never a flat overhead map view. The exact same camera in every frame and every asset of this set. A horizontal sprite sheet strip of EXACTLY 4 equal frames in one row, filling the image edge to edge, no gaps, no borders, no numbers, no labels. EVERY frame shows THE SAME Slavic hero described below from the identical camera angle, identical position and identical scale. The 4 frames are 4 precisely defined states: FRAME 1: standing at rest, chest mid-breath-in, cloak and hair hanging calm. FRAME 2: breath released, cloak and hair swaying gently to one side, weapon hand relaxed. FRAME 3: chest rising with a new breath, grip on the weapon visibly tightening, chin lifting slightly. FRAME 4: breath released, cloak and hair swaying to the other side - frames 1-2-3-4 loop as a calm idle animation. A full-body battle sprite of WARCISLAW the Wojewoda Druzyny, warrior of the arch-people, leader of the elite retinue for a mobile tower defense game, seen from a 3/4 top-down angle, FACING RIGHT in a heroic ready stance, decorated exclusively with pagan Slavic symbols - solar wheels, thunder marks, braided knotwork and animal totems - as the only ornamentation, full body visible, centered with an even margin around it. a powerful battle-scarred Slavic warrior in his prime, shaved sides with a warrior's topknot, thick moustache, hardened muscular build in scale armor and iron-studded leather, wolf-fur shoulder, wielding a heavy bearded axe and a spiked shield, fierce charging spirit. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, heroic Slavic atmosphere, weathered materials, crisp silhouette readable at small mobile size. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 4,
+      "frame_states": [
+        "standing at rest, chest mid-breath-in, cloak and hair hanging calm",
+        "breath released, cloak and hair swaying gently to one side, weapon hand relaxed",
+        "chest rising with a new breath, grip on the weapon visibly tightening, chin lifting slightly",
+        "breath released, cloak and hair swaying to the other side"
+      ],
+      "frame_resolution": "384x512"
+    },
+    {
+      "id": "hero_radogost_portrait",
+      "category": "hero_portrait",
+      "hero": "radogost",
+      "aspect_ratio": "1:1",
+      "resolution": "768x768",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: classic character portrait - eye-level camera, head and shoulders in three-quarter view, no top-down angle. A heroic head-and-shoulders portrait of RADOGOST the Zerca, guardian of the sacred groves, priest of the sacrum, for a mobile game character card, facing slightly to one side with a strong three-quarter view, dramatic soft lighting, centered and fully visible with an even margin. a solemn Slavic priest-guardian, long grey-flecked hair and a full beard, calm wise eyes, wearing white and undyed ritual robes with embroidered sun and knot patterns, a carved oak staff topped with an amber orb, sacred herbs and a ritual horn at his belt, faint golden blessing glow around his hands. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, heroic Slavic atmosphere, weathered materials, crisp silhouette readable at small mobile size. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "hero_radogost_sprite",
+      "category": "hero_sprite",
+      "hero": "radogost",
+      "aspect_ratio": "3:4",
+      "resolution": "1536x512",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: three-quarter top-down game view - the camera is raised about 45 degrees above the subject, looking down at it from the front-right like a classic isometric strategy game; the subject's TOP surfaces and FRONT side are both clearly visible at the same time, a ground ellipse sits beneath it, no horizon, no sky, never a straight-on front view, never a worm's-eye view, never a flat overhead map view. The exact same camera in every frame and every asset of this set. A horizontal sprite sheet strip of EXACTLY 4 equal frames in one row, filling the image edge to edge, no gaps, no borders, no numbers, no labels. EVERY frame shows THE SAME Slavic hero described below from the identical camera angle, identical position and identical scale. The 4 frames are 4 precisely defined states: FRAME 1: standing at rest, chest mid-breath-in, cloak and hair hanging calm. FRAME 2: breath released, cloak and hair swaying gently to one side, weapon hand relaxed. FRAME 3: chest rising with a new breath, grip on the weapon visibly tightening, chin lifting slightly. FRAME 4: breath released, cloak and hair swaying to the other side - frames 1-2-3-4 loop as a calm idle animation. A full-body battle sprite of RADOGOST the Zerca, guardian of the sacred groves, priest of the sacrum for a mobile tower defense game, seen from a 3/4 top-down angle, FACING RIGHT in a heroic ready stance, decorated exclusively with pagan Slavic symbols - solar wheels, thunder marks, braided knotwork and animal totems - as the only ornamentation, full body visible, centered with an even margin around it. a solemn Slavic priest-guardian, long grey-flecked hair and a full beard, calm wise eyes, wearing white and undyed ritual robes with embroidered sun and knot patterns, a carved oak staff topped with an amber orb, sacred herbs and a ritual horn at his belt, faint golden blessing glow around his hands. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, heroic Slavic atmosphere, weathered materials, crisp silhouette readable at small mobile size. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 4,
+      "frame_states": [
+        "standing at rest, chest mid-breath-in, cloak and hair hanging calm",
+        "breath released, cloak and hair swaying gently to one side, weapon hand relaxed",
+        "chest rising with a new breath, grip on the weapon visibly tightening, chin lifting slightly",
+        "breath released, cloak and hair swaying to the other side"
+      ],
+      "frame_resolution": "384x512"
+    },
+    {
+      "id": "hero_dobrogost_portrait",
+      "category": "hero_portrait",
+      "hero": "dobrogost",
+      "aspect_ratio": "1:1",
+      "resolution": "768x768",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: classic character portrait - eye-level camera, head and shoulders in three-quarter view, no top-down angle. A heroic head-and-shoulders portrait of DOBROGOST the Starosta Wiecu, victor of the first invasion, elder of the assembly of free folk, for a mobile game character card, facing slightly to one side with a strong three-quarter view, dramatic soft lighting, centered and fully visible with an even margin. a charismatic seasoned Slavic elder-commander, greying hair tied back, a proud lined face, wearing fine embroidered kaftan over light armor, a chieftain's fur-trimmed cloak, raising a rallying horn in one hand and a banner-spear in the other, inspiring rally presence. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, heroic Slavic atmosphere, weathered materials, crisp silhouette readable at small mobile size. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "hero_dobrogost_sprite",
+      "category": "hero_sprite",
+      "hero": "dobrogost",
+      "aspect_ratio": "3:4",
+      "resolution": "1536x512",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: three-quarter top-down game view - the camera is raised about 45 degrees above the subject, looking down at it from the front-right like a classic isometric strategy game; the subject's TOP surfaces and FRONT side are both clearly visible at the same time, a ground ellipse sits beneath it, no horizon, no sky, never a straight-on front view, never a worm's-eye view, never a flat overhead map view. The exact same camera in every frame and every asset of this set. A horizontal sprite sheet strip of EXACTLY 4 equal frames in one row, filling the image edge to edge, no gaps, no borders, no numbers, no labels. EVERY frame shows THE SAME Slavic hero described below from the identical camera angle, identical position and identical scale. The 4 frames are 4 precisely defined states: FRAME 1: standing at rest, chest mid-breath-in, cloak and hair hanging calm. FRAME 2: breath released, cloak and hair swaying gently to one side, weapon hand relaxed. FRAME 3: chest rising with a new breath, grip on the weapon visibly tightening, chin lifting slightly. FRAME 4: breath released, cloak and hair swaying to the other side - frames 1-2-3-4 loop as a calm idle animation. A full-body battle sprite of DOBROGOST the Starosta Wiecu, victor of the first invasion, elder of the assembly of free folk for a mobile tower defense game, seen from a 3/4 top-down angle, FACING RIGHT in a heroic ready stance, decorated exclusively with pagan Slavic symbols - solar wheels, thunder marks, braided knotwork and animal totems - as the only ornamentation, full body visible, centered with an even margin around it. a charismatic seasoned Slavic elder-commander, greying hair tied back, a proud lined face, wearing fine embroidered kaftan over light armor, a chieftain's fur-trimmed cloak, raising a rallying horn in one hand and a banner-spear in the other, inspiring rally presence. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, heroic Slavic atmosphere, weathered materials, crisp silhouette readable at small mobile size. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 4,
+      "frame_states": [
+        "standing at rest, chest mid-breath-in, cloak and hair hanging calm",
+        "breath released, cloak and hair swaying gently to one side, weapon hand relaxed",
+        "chest rising with a new breath, grip on the weapon visibly tightening, chin lifting slightly",
+        "breath released, cloak and hair swaying to the other side"
+      ],
+      "frame_resolution": "384x512"
+    }
+  ]
+}

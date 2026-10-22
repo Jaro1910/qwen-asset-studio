@@ -1,0 +1,272 @@
+PAN KRET STUDIO – JAK PRZEROBIĆ I ZAINSTALOWAĆ NA WINDOWS
+==========================================================
+
+Ta paczka jest przygotowana pod Linuksa (folder backend_linux). Sam kod w Pythonie prawie
+w całości działa też na Windows. Trzeba zmienić tylko cztery rzeczy:
+
+  A. ścieżkę do Pythona modelu w pliku ubnt_qwen_client.py (1 linijka),
+  B. przycisk „Stop” w Pan Kret Edit Studio (pan_kret_edit_studio.py, 1 miejsce),
+  C. skrypty .sh – na Windows zastępują je pliki .bat (treść niżej),
+  D. ścieżki do folderu modelu (linuksowe /models/... – na Windows np. D:\models\...).
+
+Wszystko poniżej robisz raz. Pliki edytujesz Notatnikiem albo VS Code.
+Zapisuj je w kodowaniu UTF-8.
+
+
+----------------------------------------------------------
+0. CZEGO POTRZEBUJESZ
+----------------------------------------------------------
+
+- Windows 10 lub 11, 64-bit.
+- Karta NVIDIA z aktualnym sterownikiem. Model korzysta z CUDA 12.8, więc sterownik musi być
+  w wersji 570 lub nowszej. Wersję pokaże polecenie:  nvidia-smi
+- VRAM: domyślne ustawienia zakładają dwie karty (24 GB + 20 GB). Przy jednej karcie zobacz
+  krok 3.4.
+- Ok. 35 GB miejsca na model (najlepiej dysk NVMe) i ok. 10 GB na środowiska Pythona.
+
+
+----------------------------------------------------------
+1. PROGRAMY DO ZAINSTALOWANIA
+----------------------------------------------------------
+
+1.1. Python 3.12 ze strony https://www.python.org/downloads/windows/
+     W instalatorze zaznacz:
+       [x] Add python.exe to PATH
+       [x] tcl/tk and IDLE   (to jest tkinter – bez niego nie otworzą się okna programu)
+     Instalator python.org ma tkinter w standardzie, więc osobnej paczki nie trzeba.
+
+1.2. Git for Windows ze strony https://git-scm.com/download/win
+     Jest potrzebny, bo biblioteka diffusers instaluje się prosto z repozytorium na GitHubie.
+
+Po instalacji otwórz NOWE okno „Wiersz polecenia” (cmd) i sprawdź:
+     py -3.12 --version
+     git --version
+
+
+----------------------------------------------------------
+2. ROZPAKOWANIE
+----------------------------------------------------------
+
+Rozpakuj archiwum np. do  C:\pan-kret-studio
+Najlepiej, żeby w ścieżce nie było spacji ani polskich liter.
+
+Dalej w tym pliku:
+  C:\pan-kret-studio\backend_linux   – programy (GUI, skrypty),
+  D:\models\qwen-image-2.1           – folder modelu (możesz wybrać inny, wtedy podmieniaj go
+                                       w poleceniach poniżej).
+
+
+----------------------------------------------------------
+3. MODEL QWEN-IMAGE-2.1 I JEGO USŁUGA
+----------------------------------------------------------
+
+3.1. Folder modelu i pliki usługi. W cmd:
+
+     mkdir D:\models\qwen-image-2.1
+     copy C:\pan-kret-studio\backend_linux\qwen_service\* D:\models\qwen-image-2.1\
+
+3.2. Środowisko Pythona dla modelu. Nazwa „venv-linux” zostaje celowo – klient szuka
+     dokładnie takiego folderu (sama nazwa nie ma znaczenia dla działania).
+
+     cd /d D:\models\qwen-image-2.1
+     py -3.12 -m venv venv-linux
+     venv-linux\Scripts\python -m pip install --upgrade pip
+     venv-linux\Scripts\pip install -r req-linux-torch.txt
+     venv-linux\Scripts\pip install -r req-linux.txt
+
+     Pierwsze polecenie z „-r” instaluje torch dla CUDA 12.8, drugie diffusers i resztę.
+     Jeśli pip przy pierwszym z nich napisze, że nie ma takiej wersji torch dla Windows,
+     otwórz https://pytorch.org/get-started/locally/ (Windows, Pip, CUDA 12.8), skopiuj
+     podane tam polecenie i zamień w nim „pip3” na  venv-linux\Scripts\pip
+     W req-linux.txt NIE zmieniaj linijki z diffusers – potrzebna jest dokładnie ta wersja
+     z gita, bo tylko ona ma QwenImage21Pipeline.
+
+3.3. Pobranie wag (ok. 32 GB). Narzędzie hf zainstalowało się w kroku 3.2 (paczka
+     huggingface_hub z req-linux.txt). Nadal w folderze modelu:
+
+     venv-linux\Scripts\hf download Qwen/Qwen-Image-2.1 --local-dir .
+
+     W folderze mają być: model_index.json oraz foldery transformer, text_encoder, vae,
+     processor, scheduler.
+
+3.4. Ustawienia usługi: otwórz  D:\models\qwen-image-2.1\ubnt_qwen_service.py
+     i w sekcji „# ---- KONFIG ----” zmień:
+
+     MODEL_DIR = "/models/models/qwen-image-2.1"
+       na
+     MODEL_DIR = r"D:\models\qwen-image-2.1"
+
+     (literka r przed cudzysłowem jest ważna – dzięki niej Python nie psuje ukośników „\”).
+
+     MAX_MEMORY = {0: "18GB", 1: "22GB"}
+       zostaw przy dwóch kartach 24 GB + 20 GB. Przy jednej karcie 48 GB lub większej:
+     MAX_MEMORY = {0: "40GB"}
+       Przy innym układzie kart wpisz dla każdej karty (0, 1, ...) kilka GB mniej niż ma.
+
+     Reszty (OUT_DIR, PORT) nie trzeba ruszać – „~” w OUT_DIR na Windows oznacza
+     C:\Users\<twoja nazwa>.
+
+3.5. ZMIANA A – ścieżka do Pythona modelu.
+     Otwórz  D:\models\qwen-image-2.1\ubnt_qwen_client.py  i znajdź linijkę:
+
+     PYTHON_EXE   = str(_HERE / "venv-linux" / "bin" / "python")   # linuksowy venv Qwena (obok windowsowego "venv")
+
+     Zamień ją na:
+
+     PYTHON_EXE   = str(_HERE / "venv-linux" / "Scripts" / "python.exe")   # venv Qwena na Windows
+
+     Powód: na Windows Python w środowisku leży w Scripts\python.exe, a nie w bin/python.
+     Bez tej zmiany przy pierwszym generowaniu pojawi się błąd, że usługa Qwen nie
+     wystartowała.
+
+3.6. Test (opcjonalny):
+
+     cd /d D:\models\qwen-image-2.1
+     venv-linux\Scripts\python ubnt_qwen_service.py
+
+     Gdy pojawi się „Usluga gotowa: http://127.0.0.1:8010”, zamknij przez Ctrl+C.
+     Za pierwszym razem zapora Windows może zapytać o dostęp sieciowy dla Pythona –
+     usługa słucha tylko na 127.0.0.1 (ten komputer), więc możesz kliknąć „Anuluj”.
+
+
+----------------------------------------------------------
+4. PROGRAMY (GUI)
+----------------------------------------------------------
+
+4.1. ZMIANA B – przycisk „Stop” w Edit Studio.
+     Otwórz  C:\pan-kret-studio\backend_linux\pan_kret_edit_studio.py  i znajdź:
+
+                 os.killpg(self.proc.pid, signal.SIGTERM)
+
+     Zamień tę JEDNĄ linijkę na trzy (zachowaj wcięcie – 16 spacji przed „if” i „else”,
+     20 przed pozostałymi):
+
+                if os.name == "nt":
+                    self.proc.terminate()
+                else:
+                    os.killpg(self.proc.pid, signal.SIGTERM)
+
+     Powód: os.killpg nie istnieje na Windows. Bez zmiany „Stop” nic nie zatrzyma
+     (w logu pojawi się tylko błąd). terminate() zamyka samo zadanie edycji, a usługa
+     z modelem żyje dalej – tak samo jak na Linuksie.
+
+4.2. ZMIANA C – pliki .bat zamiast .sh.
+     W folderze  C:\pan-kret-studio\backend_linux  utwórz trzy pliki tekstowe
+     (Notatnik → Zapisz jako → Typ: Wszystkie pliki → nazwa z końcówką .bat):
+
+     --- setup.bat ---
+     @echo off
+     cd /d "%~dp0"
+     echo [1/3] Tworzenie venv...
+     py -3.12 -m venv venv || goto blad
+     echo [2/3] Aktualizacja pip...
+     venv\Scripts\python -m pip install --upgrade pip || goto blad
+     echo [3/3] Instalacja paczek...
+     venv\Scripts\pip install -r requirements.txt || goto blad
+     echo ===== GOTOWE. Uruchom run.bat (generowanie) albo run_edit_ui.bat (edycja) =====
+     pause
+     exit /b 0
+     :blad
+     echo BLAD - przeczytaj komunikat powyzej.
+     pause
+     exit /b 1
+     --- koniec ---
+
+     --- run.bat ---
+     @echo off
+     cd /d "%~dp0"
+     if not exist venv\Scripts\python.exe ( echo Najpierw uruchom setup.bat & pause & exit /b 1 )
+     set PYTHONUTF8=1
+     venv\Scripts\python -u pan_kret_studio.py
+     pause
+     --- koniec ---
+
+     --- run_edit_ui.bat ---
+     @echo off
+     cd /d "%~dp0"
+     if not exist venv\Scripts\python.exe ( echo Najpierw uruchom setup.bat & pause & exit /b 1 )
+     set PYTHONUTF8=1
+     venv\Scripts\python -u pan_kret_edit_studio.py
+     pause
+     --- koniec ---
+
+     PYTHONUTF8=1 sprawia, że polskie znaki i myślniki w logach zapisują się poprawnie.
+     Wersja linuksowa run.sh zapisywała log też do studio_log.txt – na Windows log widać
+     w czarnym oknie, które otwiera run.bat.
+
+4.3. Instalacja: kliknij dwa razy  setup.bat  i poczekaj na „GOTOWE”.
+
+4.4. ZMIANA D – folder modelu dla programów. Pan Kret Studio i Edit Studio mają w oknie
+     pole na folder modelu:
+       Pan Kret Studio:  pole „Qwen-Image-2.1 (folder)” → wpisz  D:\models\qwen-image-2.1
+                         → „Zapisz ustawienia” (zapisze się w backend_linux\config.json),
+       Edit Studio:      pole „Qwen-Image-2.1” → wpisz to samo (zapisze się w
+                         backend_linux\config_edit.json i w manifeście jako „qwen_dir”).
+     Programy bez okien (generuj.py, edit_backend.py z ręcznie pisanym manifestem) biorą
+     folder modelu ze zmiennej środowiskowej. Ustaw ją na stałe (cmd, raz):
+           setx QWEN21_DIR D:\models\qwen-image-2.1
+     i otwórz nowe okno. Przy pierwszym uruchomieniu okienka też biorą folder z tej zmiennej,
+     dopóki w polu nie wpiszesz i nie zapiszesz innego.
+
+
+----------------------------------------------------------
+5. UŻYCIE
+----------------------------------------------------------
+
+Generowanie:  run.bat → „Wczytaj prompty...” (np. ..\01_common_ui.json) → ustaw
+              „Folder wyjściowy” → „Zapisz ustawienia” → „Generuj brakujące”.
+              Pierwsze generowanie czeka kilka minut, aż model się załaduje.
+Edycja:       run_edit_ui.bat.
+Bez okien:    w cmd, w folderze backend_linux:
+                 venv\Scripts\python generuj.py
+                 venv\Scripts\python edit_backend.py --manifest ..\edits.json --dry-run
+              (edits.json tworzy Edit Studio przy pierwszym zapisie)
+
+Domyślny folder wyników: C:\Users\<twoja nazwa>\backends\output\pan-kret-studio
+
+Język okien: przycisk „Language: EN” w prawym górnym rogu przełącza na polski (i z powrotem).
+Wybór zapisuje się w backend_linux\jezyk.json.
+
+Pierwsze wycinanie tła narzędziem rembg pobiera jego model z internetu (ok. 1 GB, do
+C:\Users\<twoja nazwa>\.rembg\models). W logu pojawi się „[rembg] laduje model wycinania”,
+postęp widać w czarnym oknie otwartym przez run.bat. Nie zamykaj programu, dopóki nie pojawi
+się „[rembg] model gotowy” – później model jest już na dysku.
+Jak program wycina tło (zielone tło, rembg, ograniczenia): backend_linux\README.md,
+sekcja „Przezroczyste tło”.
+
+Pełny opis pól, plików z promptami i manifestów: backend_linux\README.md – dotyczy też
+Windows, tylko zamiast ./run.sh i ./venv/bin/python używasz run.bat i venv\Scripts\python.
+
+
+----------------------------------------------------------
+6. TRYB API (GEMINI) I KLUCZ
+----------------------------------------------------------
+
+Tryb API nie wymaga modelu ani karty – działa od razu po kroku 4.3. Klucz z
+aistudio.google.com wpisujesz w oknie programu. Zapisuje się w  backend_linux\config.json.
+Tego pliku NIE wysyłaj nikomu i nie pakuj go do archiwum, jeśli będziesz paczkę dalej
+udostępniać.
+
+
+----------------------------------------------------------
+7. PROBLEMY
+----------------------------------------------------------
+
+„py nie jest rozpoznawany…”     Python nie jest zainstalowany albo instalacja nie dodała
+                                 „py”. Zainstaluj ponownie z python.org (krok 1.1).
+„No module named 'tkinter'”      Python bez tcl/tk: uruchom instalator Pythona →
+                                 Modify → zaznacz „tcl/tk and IDLE”, potem usuń folder
+                                 venv i uruchom setup.bat jeszcze raz.
+„git nie jest rozpoznawany…”     przy instalacji req-linux.txt – zainstaluj Git (krok 1.2)
+                                 i otwórz nowe okno cmd.
+„Brak ubnt_qwen_client.py w …”   zły folder modelu – krok 4.4.
+Długo nic po „[rembg] laduje…”   pobiera się model rembg (ok. 1 GB) – patrz rozdział 5.
+„UWAGA: tlo NIE zostalo wyciete” tło nie było zielone, a rembg jest wyłączony w oknie albo
+                                 nie działa – szczegóły w logu („[rembg nie wypalil] …”).
+„Usluga Qwen nie wystartowala”   przeczytaj  D:\models\qwen-image-2.1\ubnt_qwen_service.log
+                                 Najczęściej: nie zrobiona ZMIANA A (krok 3.5), zły
+                                 MODEL_DIR (krok 3.4) albo za mało VRAM.
+„Qwen HTTP 507”                  za mało pamięci karty dla tej rozdzielczości – zmniejsz
+                                 resolution w pliku z promptami albo popraw MAX_MEMORY.
+„Port 8010 zajęty”               zmień PORT w ubnt_qwen_service.py i URL w
+                                 ubnt_qwen_client.py na ten sam nowy numer.

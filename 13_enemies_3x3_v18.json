@@ -1,0 +1,921 @@
+{
+  "global": {
+    "note": "Crusader Defence - manifest 13 v18. TWARDY FRONT VIEW: kazdy prompt zaczyna sekcje ruchu od 'Strict head-on front view... never turned sideways', a pozy sa zdefiniowane wzgledem kamery (knee raised toward the camera, sole of the boot visible, foot landing closer to the camera) - takie pozy maja sens tylko frontalnie, wiec kotwicza kamere. Usuniete pozy profilowe (wide stride, leg stretched far behind), ktore ciagnely model w widok boczny. Zakazane slowa nadal nieobecne: 'same', 'identical', 'equal'. 3 pliki na jednostke (<id>_walk/_burn/_slow), 3 kroki 256x256 = strip 768x256, tlo #00FF00 -> rembg, negative ZAWSZE ' ', trzy pliki jednostki tym samym seedem.",
+    "style_reference": "Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (forest green, amber, aged oak wood, iron grey, blood red accents), early-medieval mythic atmosphere, weathered natural materials, high readability on mobile, crisp clean silhouettes, consistent lighting from upper left.",
+    "negative": " "
+  },
+  "assets": [
+    {
+      "id": "enemy_pacholek_walk",
+      "category": "enemy_sprite",
+      "unit_class": "piechota",
+      "state": "walk",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader levy footman with a spear and a small shield. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_pacholek_burn",
+      "category": "enemy_sprite",
+      "unit_class": "piechota",
+      "state": "burn",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader levy footman with a spear and a small shield. He is on fire but keeps walking. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_pacholek_slow",
+      "category": "enemy_sprite",
+      "unit_class": "piechota",
+      "state": "slow",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader levy footman with a spear and a small shield. He walks through ankle-deep mud but keeps walking. No fire. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_lucznik_walk",
+      "category": "enemy_sprite",
+      "unit_class": "strzelcy",
+      "state": "walk",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader archer with a longbow. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_lucznik_burn",
+      "category": "enemy_sprite",
+      "unit_class": "strzelcy",
+      "state": "burn",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader archer with a longbow. He is on fire but keeps walking. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_lucznik_slow",
+      "category": "enemy_sprite",
+      "unit_class": "strzelcy",
+      "state": "slow",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader archer with a longbow. He walks through ankle-deep mud but keeps walking. No fire. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_piechur_walk",
+      "category": "enemy_sprite",
+      "unit_class": "piechota",
+      "state": "walk",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader man-at-arms with a sword and shield. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_piechur_burn",
+      "category": "enemy_sprite",
+      "unit_class": "piechota",
+      "state": "burn",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader man-at-arms with a sword and shield. He is on fire but keeps walking. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_piechur_slow",
+      "category": "enemy_sprite",
+      "unit_class": "piechota",
+      "state": "slow",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader man-at-arms with a sword and shield. He walks through ankle-deep mud but keeps walking. No fire. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_zwiadowca_walk",
+      "category": "enemy_sprite",
+      "unit_class": "kawaleria",
+      "state": "walk",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a light crusader scout with a dagger. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_zwiadowca_burn",
+      "category": "enemy_sprite",
+      "unit_class": "kawaleria",
+      "state": "burn",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a light crusader scout with a dagger. He is on fire but keeps walking. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_zwiadowca_slow",
+      "category": "enemy_sprite",
+      "unit_class": "kawaleria",
+      "state": "slow",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a light crusader scout with a dagger. He walks through ankle-deep mud but keeps walking. No fire. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_woz_walk",
+      "category": "enemy_sprite",
+      "unit_class": "maszyny",
+      "state": "walk",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader supply wagon pulled by an ox, driver on the bench. Strict head-on front view: the animal walks straight toward the camera, chest and muzzle toward the viewer in every step, never turned sideways. STEP 1: the front-left leg lifted high with the hoof raised toward the camera, front-right leg planted, head bobbed to the right of the frame. STEP 2: the front-right leg lifted high with the hoof raised toward the camera, front-left leg planted, head bobbed to the left of the frame. STEP 3: the front-left hoof just landing closer to the camera and larger in perspective, chest dipped lower mid-stride. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: front-left hoof raised toward camera, front-right planted, head bobbed right",
+        "front view: front-right hoof raised toward camera, front-left planted, head bobbed left",
+        "front view: front-left hoof landing closer to camera, chest dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_woz_burn",
+      "category": "enemy_sprite",
+      "unit_class": "maszyny",
+      "state": "burn",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader supply wagon pulled by an ox, driver on the bench. Horse and rider are on fire but keep moving. Strict head-on front view: the animal walks straight toward the camera, chest and muzzle toward the viewer in every step, never turned sideways. STEP 1: the front-left leg lifted high with the hoof raised toward the camera, front-right leg planted, head bobbed to the right of the frame. STEP 2: the front-right leg lifted high with the hoof raised toward the camera, front-left leg planted, head bobbed to the left of the frame. STEP 3: the front-left hoof just landing closer to the camera and larger in perspective, chest dipped lower mid-stride. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: front-left hoof raised toward camera, front-right planted, head bobbed right",
+        "front view: front-right hoof raised toward camera, front-left planted, head bobbed left",
+        "front view: front-left hoof landing closer to camera, chest dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_woz_slow",
+      "category": "enemy_sprite",
+      "unit_class": "maszyny",
+      "state": "slow",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader supply wagon pulled by an ox, driver on the bench. The horse moves through ankle-deep mud but keeps moving. No fire. Strict head-on front view: the animal walks straight toward the camera, chest and muzzle toward the viewer in every step, never turned sideways. STEP 1: the front-left leg lifted high with the hoof raised toward the camera, front-right leg planted, head bobbed to the right of the frame. STEP 2: the front-right leg lifted high with the hoof raised toward the camera, front-left leg planted, head bobbed to the left of the frame. STEP 3: the front-left hoof just landing closer to the camera and larger in perspective, chest dipped lower mid-stride. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: front-left hoof raised toward camera, front-right planted, head bobbed right",
+        "front view: front-right hoof raised toward camera, front-left planted, head bobbed left",
+        "front view: front-left hoof landing closer to camera, chest dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_tarczownik_walk",
+      "category": "enemy_sprite",
+      "unit_class": "piechota",
+      "state": "walk",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader soldier with a huge tower shield. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_tarczownik_burn",
+      "category": "enemy_sprite",
+      "unit_class": "piechota",
+      "state": "burn",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader soldier with a huge tower shield. He is on fire but keeps walking. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_tarczownik_slow",
+      "category": "enemy_sprite",
+      "unit_class": "piechota",
+      "state": "slow",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader soldier with a huge tower shield. He walks through ankle-deep mud but keeps walking. No fire. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_kusznik_walk",
+      "category": "enemy_sprite",
+      "unit_class": "strzelcy",
+      "state": "walk",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader crossbowman. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_kusznik_burn",
+      "category": "enemy_sprite",
+      "unit_class": "strzelcy",
+      "state": "burn",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader crossbowman. He is on fire but keeps walking. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_kusznik_slow",
+      "category": "enemy_sprite",
+      "unit_class": "strzelcy",
+      "state": "slow",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader crossbowman. He walks through ankle-deep mud but keeps walking. No fire. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_kawalerzysta_walk",
+      "category": "enemy_sprite",
+      "unit_class": "kawaleria",
+      "state": "walk",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader light horseman with a lance on a warhorse. Strict head-on front view: the animal walks straight toward the camera, chest and muzzle toward the viewer in every step, never turned sideways. STEP 1: the front-left leg lifted high with the hoof raised toward the camera, front-right leg planted, head bobbed to the right of the frame. STEP 2: the front-right leg lifted high with the hoof raised toward the camera, front-left leg planted, head bobbed to the left of the frame. STEP 3: the front-left hoof just landing closer to the camera and larger in perspective, chest dipped lower mid-stride. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: front-left hoof raised toward camera, front-right planted, head bobbed right",
+        "front view: front-right hoof raised toward camera, front-left planted, head bobbed left",
+        "front view: front-left hoof landing closer to camera, chest dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_kawalerzysta_burn",
+      "category": "enemy_sprite",
+      "unit_class": "kawaleria",
+      "state": "burn",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader light horseman with a lance on a warhorse. Horse and rider are on fire but keep moving. Strict head-on front view: the animal walks straight toward the camera, chest and muzzle toward the viewer in every step, never turned sideways. STEP 1: the front-left leg lifted high with the hoof raised toward the camera, front-right leg planted, head bobbed to the right of the frame. STEP 2: the front-right leg lifted high with the hoof raised toward the camera, front-left leg planted, head bobbed to the left of the frame. STEP 3: the front-left hoof just landing closer to the camera and larger in perspective, chest dipped lower mid-stride. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: front-left hoof raised toward camera, front-right planted, head bobbed right",
+        "front view: front-right hoof raised toward camera, front-left planted, head bobbed left",
+        "front view: front-left hoof landing closer to camera, chest dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_kawalerzysta_slow",
+      "category": "enemy_sprite",
+      "unit_class": "kawaleria",
+      "state": "slow",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader light horseman with a lance on a warhorse. The horse moves through ankle-deep mud but keeps moving. No fire. Strict head-on front view: the animal walks straight toward the camera, chest and muzzle toward the viewer in every step, never turned sideways. STEP 1: the front-left leg lifted high with the hoof raised toward the camera, front-right leg planted, head bobbed to the right of the frame. STEP 2: the front-right leg lifted high with the hoof raised toward the camera, front-left leg planted, head bobbed to the left of the frame. STEP 3: the front-left hoof just landing closer to the camera and larger in perspective, chest dipped lower mid-stride. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: front-left hoof raised toward camera, front-right planted, head bobbed right",
+        "front view: front-right hoof raised toward camera, front-left planted, head bobbed left",
+        "front view: front-left hoof landing closer to camera, chest dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_taran_walk",
+      "category": "enemy_sprite",
+      "unit_class": "maszyny",
+      "state": "walk",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Rolling animation of a crusader battering ram on wheels pushed by two soldiers. Strict head-on front view: the machine rolls straight toward the camera, its front face squared to the viewer in every step, never turned sideways. STEP 1: wheel spokes upright, the two pushing soldiers leaning into the push with the left knee raised toward the camera. STEP 2: wheel spokes tilted halfway round, the two pushing soldiers leaning into the push with the right knee raised toward the camera. STEP 3: wheel spokes upside down from step 1, the two pushing soldiers dipped low mid weight-shift with both feet down. Each step is a clearly distinct wheel angle and leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: spokes upright, crew left knee raised toward camera",
+        "front view: spokes halfway round, crew right knee raised toward camera",
+        "front view: spokes upside down, crew dipped low, both feet down"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_taran_burn",
+      "category": "enemy_sprite",
+      "unit_class": "maszyny",
+      "state": "burn",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Rolling animation of a crusader battering ram on wheels pushed by two soldiers. The machine is on fire but keeps rolling. Strict head-on front view: the machine rolls straight toward the camera, its front face squared to the viewer in every step, never turned sideways. STEP 1: wheel spokes upright, the two pushing soldiers leaning into the push with the left knee raised toward the camera. STEP 2: wheel spokes tilted halfway round, the two pushing soldiers leaning into the push with the right knee raised toward the camera. STEP 3: wheel spokes upside down from step 1, the two pushing soldiers dipped low mid weight-shift with both feet down. Each step is a clearly distinct wheel angle and leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: spokes upright, crew left knee raised toward camera",
+        "front view: spokes halfway round, crew right knee raised toward camera",
+        "front view: spokes upside down, crew dipped low, both feet down"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_taran_slow",
+      "category": "enemy_sprite",
+      "unit_class": "maszyny",
+      "state": "slow",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Rolling animation of a crusader battering ram on wheels pushed by two soldiers. It rolls through ankle-deep mud but keeps rolling. No fire. Strict head-on front view: the machine rolls straight toward the camera, its front face squared to the viewer in every step, never turned sideways. STEP 1: wheel spokes upright, the two pushing soldiers leaning into the push with the left knee raised toward the camera. STEP 2: wheel spokes tilted halfway round, the two pushing soldiers leaning into the push with the right knee raised toward the camera. STEP 3: wheel spokes upside down from step 1, the two pushing soldiers dipped low mid weight-shift with both feet down. Each step is a clearly distinct wheel angle and leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: spokes upright, crew left knee raised toward camera",
+        "front view: spokes halfway round, crew right knee raised toward camera",
+        "front view: spokes upside down, crew dipped low, both feet down"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_rycerz_pieszy_walk",
+      "category": "enemy_sprite",
+      "unit_class": "piechota",
+      "state": "walk",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader knight on foot in full plate armour. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_rycerz_pieszy_burn",
+      "category": "enemy_sprite",
+      "unit_class": "piechota",
+      "state": "burn",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader knight on foot in full plate armour. He is on fire but keeps walking. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_rycerz_pieszy_slow",
+      "category": "enemy_sprite",
+      "unit_class": "piechota",
+      "state": "slow",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader knight on foot in full plate armour. He walks through ankle-deep mud but keeps walking. No fire. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_rycerz_konny_walk",
+      "category": "enemy_sprite",
+      "unit_class": "kawaleria",
+      "state": "walk",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader knight in full plate on an armoured warhorse. Strict head-on front view: the animal walks straight toward the camera, chest and muzzle toward the viewer in every step, never turned sideways. STEP 1: the front-left leg lifted high with the hoof raised toward the camera, front-right leg planted, head bobbed to the right of the frame. STEP 2: the front-right leg lifted high with the hoof raised toward the camera, front-left leg planted, head bobbed to the left of the frame. STEP 3: the front-left hoof just landing closer to the camera and larger in perspective, chest dipped lower mid-stride. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: front-left hoof raised toward camera, front-right planted, head bobbed right",
+        "front view: front-right hoof raised toward camera, front-left planted, head bobbed left",
+        "front view: front-left hoof landing closer to camera, chest dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_rycerz_konny_burn",
+      "category": "enemy_sprite",
+      "unit_class": "kawaleria",
+      "state": "burn",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader knight in full plate on an armoured warhorse. Horse and rider are on fire but keep moving. Strict head-on front view: the animal walks straight toward the camera, chest and muzzle toward the viewer in every step, never turned sideways. STEP 1: the front-left leg lifted high with the hoof raised toward the camera, front-right leg planted, head bobbed to the right of the frame. STEP 2: the front-right leg lifted high with the hoof raised toward the camera, front-left leg planted, head bobbed to the left of the frame. STEP 3: the front-left hoof just landing closer to the camera and larger in perspective, chest dipped lower mid-stride. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: front-left hoof raised toward camera, front-right planted, head bobbed right",
+        "front view: front-right hoof raised toward camera, front-left planted, head bobbed left",
+        "front view: front-left hoof landing closer to camera, chest dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_rycerz_konny_slow",
+      "category": "enemy_sprite",
+      "unit_class": "kawaleria",
+      "state": "slow",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader knight in full plate on an armoured warhorse. The horse moves through ankle-deep mud but keeps moving. No fire. Strict head-on front view: the animal walks straight toward the camera, chest and muzzle toward the viewer in every step, never turned sideways. STEP 1: the front-left leg lifted high with the hoof raised toward the camera, front-right leg planted, head bobbed to the right of the frame. STEP 2: the front-right leg lifted high with the hoof raised toward the camera, front-left leg planted, head bobbed to the left of the frame. STEP 3: the front-left hoof just landing closer to the camera and larger in perspective, chest dipped lower mid-stride. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: front-left hoof raised toward camera, front-right planted, head bobbed right",
+        "front view: front-right hoof raised toward camera, front-left planted, head bobbed left",
+        "front view: front-left hoof landing closer to camera, chest dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_smolarz_walk",
+      "category": "enemy_sprite",
+      "unit_class": "strzelcy",
+      "state": "walk",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader soldier carrying a pot of burning pitch. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_smolarz_burn",
+      "category": "enemy_sprite",
+      "unit_class": "strzelcy",
+      "state": "burn",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader soldier carrying a pot of burning pitch. He is on fire but keeps walking. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_smolarz_slow",
+      "category": "enemy_sprite",
+      "unit_class": "strzelcy",
+      "state": "slow",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader soldier carrying a pot of burning pitch. He walks through ankle-deep mud but keeps walking. No fire. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_balista_walk",
+      "category": "enemy_sprite",
+      "unit_class": "maszyny",
+      "state": "walk",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Rolling animation of a crusader ballista on wheels pushed by one soldier. Strict head-on front view: the machine rolls straight toward the camera, its front face squared to the viewer in every step, never turned sideways. STEP 1: wheel spokes upright, the pushing soldier leaning into the push with the left knee raised toward the camera. STEP 2: wheel spokes tilted halfway round, the pushing soldier leaning into the push with the right knee raised toward the camera. STEP 3: wheel spokes upside down from step 1, the pushing soldier dipped low mid weight-shift with both feet down. Each step is a clearly distinct wheel angle and leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: spokes upright, crew left knee raised toward camera",
+        "front view: spokes halfway round, crew right knee raised toward camera",
+        "front view: spokes upside down, crew dipped low, both feet down"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_balista_burn",
+      "category": "enemy_sprite",
+      "unit_class": "maszyny",
+      "state": "burn",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Rolling animation of a crusader ballista on wheels pushed by one soldier. The machine is on fire but keeps rolling. Strict head-on front view: the machine rolls straight toward the camera, its front face squared to the viewer in every step, never turned sideways. STEP 1: wheel spokes upright, the pushing soldier leaning into the push with the left knee raised toward the camera. STEP 2: wheel spokes tilted halfway round, the pushing soldier leaning into the push with the right knee raised toward the camera. STEP 3: wheel spokes upside down from step 1, the pushing soldier dipped low mid weight-shift with both feet down. Each step is a clearly distinct wheel angle and leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: spokes upright, crew left knee raised toward camera",
+        "front view: spokes halfway round, crew right knee raised toward camera",
+        "front view: spokes upside down, crew dipped low, both feet down"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_balista_slow",
+      "category": "enemy_sprite",
+      "unit_class": "maszyny",
+      "state": "slow",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Rolling animation of a crusader ballista on wheels pushed by one soldier. It rolls through ankle-deep mud but keeps rolling. No fire. Strict head-on front view: the machine rolls straight toward the camera, its front face squared to the viewer in every step, never turned sideways. STEP 1: wheel spokes upright, the pushing soldier leaning into the push with the left knee raised toward the camera. STEP 2: wheel spokes tilted halfway round, the pushing soldier leaning into the push with the right knee raised toward the camera. STEP 3: wheel spokes upside down from step 1, the pushing soldier dipped low mid weight-shift with both feet down. Each step is a clearly distinct wheel angle and leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: spokes upright, crew left knee raised toward camera",
+        "front view: spokes halfway round, crew right knee raised toward camera",
+        "front view: spokes upside down, crew dipped low, both feet down"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_arbalista_walk",
+      "category": "enemy_sprite",
+      "unit_class": "strzelcy",
+      "state": "walk",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader gunner with a heavy arbalest. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_arbalista_burn",
+      "category": "enemy_sprite",
+      "unit_class": "strzelcy",
+      "state": "burn",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader gunner with a heavy arbalest. He is on fire but keeps walking. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_arbalista_slow",
+      "category": "enemy_sprite",
+      "unit_class": "strzelcy",
+      "state": "slow",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader gunner with a heavy arbalest. He walks through ankle-deep mud but keeps walking. No fire. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_komtur_walk",
+      "category": "enemy_sprite",
+      "unit_class": "kawaleria",
+      "state": "walk",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader commander in ornate armour with a mace. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_komtur_burn",
+      "category": "enemy_sprite",
+      "unit_class": "kawaleria",
+      "state": "burn",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader commander in ornate armour with a mace. He is on fire but keeps walking. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_komtur_slow",
+      "category": "enemy_sprite",
+      "unit_class": "kawaleria",
+      "state": "slow",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Walking animation of a crusader commander in ornate armour with a mace. He walks through ankle-deep mud but keeps walking. No fire. Strict head-on front view: he walks straight toward the camera, face, chest and both shoulders squared to the viewer in every step, never turned sideways. STEP 1: full weight on the left foot, right knee raised high toward the camera with the sole of the right boot visible to the viewer, torso swaying to the left, right arm swung toward the camera. STEP 2: full weight on the right foot, left knee raised high toward the camera with the sole of the left boot visible to the viewer, torso swaying to the right, left arm swung toward the camera. STEP 3: both feet on the ground a shoulder width apart, right foot just landing closer to the camera and larger in perspective, body dipped lower mid weight-shift, arms passing at the sides. Each step is a strongly exaggerated, clearly distinct leg pose, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: weight on left foot, right knee raised toward camera, sole of right boot visible, sway left",
+        "front view: weight on right foot, left knee raised toward camera, sole of left boot visible, sway right",
+        "front view: both feet down shoulder-width, right foot landing closer to camera, body dipped low"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_wieza_walk",
+      "category": "enemy_sprite",
+      "unit_class": "maszyny",
+      "state": "walk",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Rolling animation of a crusader siege tower on wheels, a wooden belfry with a drawbridge. Strict head-on front view: the machine rolls straight toward the camera, its front face squared to the viewer in every step, never turned sideways. STEP 1: wheel spokes upright, the tower level. STEP 2: wheel spokes tilted halfway round, the tower rocking slightly to the left of the frame, drawbridge chains swaying. STEP 3: wheel spokes upside down from step 1, the tower rocking slightly to the right of the frame. Each step is a clearly distinct wheel angle, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: spokes upright, tower level",
+        "front view: spokes halfway round, tower rocking left, chains swaying",
+        "front view: spokes upside down, tower rocking right"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_wieza_burn",
+      "category": "enemy_sprite",
+      "unit_class": "maszyny",
+      "state": "burn",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Rolling animation of a crusader siege tower on wheels, a wooden belfry with a drawbridge. The machine is on fire but keeps rolling. Strict head-on front view: the machine rolls straight toward the camera, its front face squared to the viewer in every step, never turned sideways. STEP 1: wheel spokes upright, the tower level. STEP 2: wheel spokes tilted halfway round, the tower rocking slightly to the left of the frame, drawbridge chains swaying. STEP 3: wheel spokes upside down from step 1, the tower rocking slightly to the right of the frame. Each step is a clearly distinct wheel angle, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: spokes upright, tower level",
+        "front view: spokes halfway round, tower rocking left, chains swaying",
+        "front view: spokes upside down, tower rocking right"
+      ],
+      "frame_resolution": "256x256"
+    },
+    {
+      "id": "enemy_wieza_slow",
+      "category": "enemy_sprite",
+      "unit_class": "maszyny",
+      "state": "slow",
+      "aspect_ratio": "3:1",
+      "resolution": "768x256",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "Rolling animation of a crusader siege tower on wheels, a wooden belfry with a drawbridge. It rolls through ankle-deep mud but keeps rolling. No fire. Strict head-on front view: the machine rolls straight toward the camera, its front face squared to the viewer in every step, never turned sideways. STEP 1: wheel spokes upright, the tower level. STEP 2: wheel spokes tilted halfway round, the tower rocking slightly to the left of the frame, drawbridge chains swaying. STEP 3: wheel spokes upside down from step 1, the tower rocking slightly to the right of the frame. Each step is a clearly distinct wheel angle, all seen head-on. Sprite sheet strip of 3 animation steps side by side. Full body with space under the feet. Painterly dark medieval game art. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "front view: spokes upright, tower level",
+        "front view: spokes halfway round, tower rocking left, chains swaying",
+        "front view: spokes upside down, tower rocking right"
+      ],
+      "frame_resolution": "256x256"
+    }
+  ]
+}

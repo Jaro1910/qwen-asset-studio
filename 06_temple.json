@@ -1,0 +1,86 @@
+{
+  "global": {
+    "note": "KAMERA: 3/4 top-down ~45 stopni jak wieze (CAMERA LOCK) - swiatynia stoi na tej samej mapie. Crusader Defence - manifest 06 swiatynia (7 assetow: 7 poziomow rozbudowy od Swietego Gaju po Swiatynie w Radogoszczy, waluta Bursztyn). Widok 3/4 top-down, statyczna budowla bronionego celu (stoi na dole/centrum mapy). Progresja: gaj -> zrodlo -> chram -> kacina -> gontyna -> grod -> Radogoszcz. Render na #00FF00 -> rembg. Tip: wszystkie 7 tym samym seedem + ta sama pozycja kamery, by rozbudowa wygladala jak ewolucja tego samego miejsca.",
+    "style_reference": "Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (forest green, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, high readability on mobile, crisp clean silhouettes, consistent lighting from upper left.",
+    "negative": " "
+  },
+  "assets": [
+    {
+      "id": "temple_lvl1_swiety_gaj",
+      "category": "temple_static",
+      "temple_level": 1,
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: three-quarter top-down game view - the camera is raised about 45 degrees above the subject, looking down at it from the front-right like a classic isometric strategy game; the subject's TOP surfaces and FRONT side are both clearly visible at the same time, a ground ellipse sits beneath it, no horizon, no sky, never a straight-on front view, never a worm's-eye view, never a flat overhead map view. The exact same camera in every frame and every asset of this set. The defended sacred site of the Slavs in a mobile tower defense game, seen from a 3/4 top-down angle, painterly semi-realistic. This is level 1: Swiety Gaj (Sacred Grove) - a natural clearing among ancient oaks: a ring of old moss-covered trees around a simple flat offering stone, wildflowers and a small fire pit, untouched wild holiness, no buildings yet. The structure is centered and fully visible with an even margin around it, standing on a small ground base. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, sacred early-medieval Slavic atmosphere, weathered natural materials, crisp silhouette readable at mobile size. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "temple_lvl2_swiete_zrodlo",
+      "category": "temple_static",
+      "temple_level": 2,
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: three-quarter top-down game view - the camera is raised about 45 degrees above the subject, looking down at it from the front-right like a classic isometric strategy game; the subject's TOP surfaces and FRONT side are both clearly visible at the same time, a ground ellipse sits beneath it, no horizon, no sky, never a straight-on front view, never a worm's-eye view, never a flat overhead map view. The exact same camera in every frame and every asset of this set. The defended sacred site of the Slavs in a mobile tower defense game, seen from a 3/4 top-down angle, painterly semi-realistic. This is level 2: Swiete Zrodlo (Sacred Spring) - the grove now centered on a clear bubbling spring ringed with white stones, a small wooden footbridge and carved posts, hanging votive ribbons, the offering stone beside the water. The structure is centered and fully visible with an even margin around it, standing on a small ground base. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, sacred early-medieval Slavic atmosphere, weathered natural materials, crisp silhouette readable at mobile size. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "temple_lvl3_chram",
+      "category": "temple_static",
+      "temple_level": 3,
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: three-quarter top-down game view - the camera is raised about 45 degrees above the subject, looking down at it from the front-right like a classic isometric strategy game; the subject's TOP surfaces and FRONT side are both clearly visible at the same time, a ground ellipse sits beneath it, no horizon, no sky, never a straight-on front view, never a worm's-eye view, never a flat overhead map view. The exact same camera in every frame and every asset of this set. The defended sacred site of the Slavs in a mobile tower defense game, seen from a 3/4 top-down angle, painterly semi-realistic. This is level 3: Ogrodzony Dab / Chram (Fenced Oak) - a great sacred oak enclosed by a low carved wooden fence, a roofed shrine niche at its base holding an idol, offering tables, torches on posts, a defined holy precinct. The structure is centered and fully visible with an even margin around it, standing on a small ground base. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, sacred early-medieval Slavic atmosphere, weathered natural materials, crisp silhouette readable at mobile size. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "temple_lvl4_kacina",
+      "category": "temple_static",
+      "temple_level": 4,
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: three-quarter top-down game view - the camera is raised about 45 degrees above the subject, looking down at it from the front-right like a classic isometric strategy game; the subject's TOP surfaces and FRONT side are both clearly visible at the same time, a ground ellipse sits beneath it, no horizon, no sky, never a straight-on front view, never a worm's-eye view, never a flat overhead map view. The exact same camera in every frame and every asset of this set. The defended sacred site of the Slavs in a mobile tower defense game, seen from a 3/4 top-down angle, painterly semi-realistic. This is level 4: Kacina (Idol Sanctuary) - a small standalone wooden temple hut with steep shingled roof and carved gables, a tall painted idol on a plinth beside it, a fenced courtyard with braziers and banners, the sacred oak behind. The structure is centered and fully visible with an even margin around it, standing on a small ground base. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, sacred early-medieval Slavic atmosphere, weathered natural materials, crisp silhouette readable at mobile size. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "temple_lvl5_gontyna",
+      "category": "temple_static",
+      "temple_level": 5,
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: three-quarter top-down game view - the camera is raised about 45 degrees above the subject, looking down at it from the front-right like a classic isometric strategy game; the subject's TOP surfaces and FRONT side are both clearly visible at the same time, a ground ellipse sits beneath it, no horizon, no sky, never a straight-on front view, never a worm's-eye view, never a flat overhead map view. The exact same camera in every frame and every asset of this set. The defended sacred site of the Slavs in a mobile tower defense game, seen from a 3/4 top-down angle, painterly semi-realistic. This is level 5: Gontyna (Shingled Temple) - a proper timber temple building with tall shingled roofs and carved dragon-head ridge beams, painted walls with sun motifs, a colonnaded porch, multiple idols, a walled sacred yard with a central fire altar. The structure is centered and fully visible with an even margin around it, standing on a small ground base. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, sacred early-medieval Slavic atmosphere, weathered natural materials, crisp silhouette readable at mobile size. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "temple_lvl6_grod",
+      "category": "temple_static",
+      "temple_level": 6,
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: three-quarter top-down game view - the camera is raised about 45 degrees above the subject, looking down at it from the front-right like a classic isometric strategy game; the subject's TOP surfaces and FRONT side are both clearly visible at the same time, a ground ellipse sits beneath it, no horizon, no sky, never a straight-on front view, never a worm's-eye view, never a flat overhead map view. The exact same camera in every frame and every asset of this set. The defended sacred site of the Slavs in a mobile tower defense game, seen from a 3/4 top-down angle, painterly semi-realistic. This is level 6: Grod Swiatynny (Temple Stronghold) - a fortified temple compound: the timber temple now ringed by a wooden palisade wall with a gate tower and rampart, watch-braziers, banners of the gods, defenders' walkways, a commanding sacred fortress. The structure is centered and fully visible with an even margin around it, standing on a small ground base. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, sacred early-medieval Slavic atmosphere, weathered natural materials, crisp silhouette readable at mobile size. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "temple_lvl7_radogoszcz",
+      "category": "temple_static",
+      "temple_level": 7,
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: three-quarter top-down game view - the camera is raised about 45 degrees above the subject, looking down at it from the front-right like a classic isometric strategy game; the subject's TOP surfaces and FRONT side are both clearly visible at the same time, a ground ellipse sits beneath it, no horizon, no sky, never a straight-on front view, never a worm's-eye view, never a flat overhead map view. The exact same camera in every frame and every asset of this set. The defended sacred site of the Slavs in a mobile tower defense game, seen from a 3/4 top-down angle, painterly semi-realistic. This is level 7: Swiatynia w Radogoszczy (Temple of Radogost/Rethra) - the legendary greatest temple of the Polabian Slavs: a magnificent multi-towered timber temple with red-and-gold carved walls, golden horns on the roofs, an outer rampart of earth and oak with multiple gate-towers, many god-idols, a blazing central altar, awe-inspiring holy citadel. The structure is centered and fully visible with an even margin around it, standing on a small ground base. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, sacred early-medieval Slavic atmosphere, weathered natural materials, crisp silhouette readable at mobile size. Transparent background on #00FF00.",
+      "negative": " "
+    }
+  ]
+}

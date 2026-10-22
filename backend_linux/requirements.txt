@@ -1,0 +1,7 @@
+# venv backendu Pan Kret Studio (Linux). Model Qwen ma WLASNY venv (patrz README.md).
+pillow
+numpy
+scipy
+rembg
+onnxruntime
+google-genai

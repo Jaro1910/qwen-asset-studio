@@ -1,0 +1,279 @@
+{
+  "global": {
+    "note": "Crusader Defence - manifest 01 wspolne UI (30 assetow). Orientacja gry PIONOWA (9:16). Wszystkie assety transparent: render na #00FF00 i wyciecie (rembg). Wszystkie tileable=false. Przyciski/pola/panele maja PUSTE wnetrza - tekst i liczby naklada silnik (Godot). Rozdzielczosc wg proporcji obiektu, bazowo krotszy bok 256-512px.",
+    "style_reference": "Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (forest green, amber, aged oak wood, iron grey, blood red accents), early-medieval Slavic mythic atmosphere, carved wood and pagan knot ornament motifs, weathered natural materials, high readability on mobile, crisp clean silhouettes, consistent lighting from upper left.",
+    "negative": " "
+  },
+  "assets": [
+    {
+      "id": "ui_btn_generic",
+      "category": "ui",
+      "aspect_ratio": "4:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A wide rounded rectangle game menu button carved from a single plank of aged oak wood, painterly semi-realistic texture with visible grain and worn edges, shallow carved Slavic knot ornament running along the top and bottom edge, a soft warm highlight across the upper surface and a deep shadowed bevel along the lower edge giving a chunky pressable look, empty center ready for text. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_btn_generic_pressed",
+      "category": "ui",
+      "aspect_ratio": "4:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A wide rounded rectangle game menu button carved from aged oak wood in a pressed-down state, painterly semi-realistic texture, darker recessed surface with an inner shadow ring around the whole edge, the shallow carved Slavic knot ornament along top and bottom edges now dimmed, flattened pushed look, empty center ready for text. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_btn_tab_active",
+      "category": "ui",
+      "aspect_ratio": "3:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A wide rounded menu tab button of polished amber-toned wood, clearly selected: glowing warm honey highlight across the surface, a thin band of golden amber resin inlaid along the lower edge, slightly raised proud look, empty center ready for text. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_btn_tab_inactive",
+      "category": "ui",
+      "aspect_ratio": "3:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A wide rounded menu tab button of dull grey-brown weathered wood, resting unselected: flat matte shading, slightly recessed as if sitting behind other tabs, faint dust and wear on the surface, empty center ready for text. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_panel_bg",
+      "category": "ui",
+      "aspect_ratio": "3:4",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A large vertical rounded rectangle dialog panel of stretched aged parchment leather with softly darkened burnt edges, subtle painterly grain and stains, faint pale Slavic pagan symbols watermarked near the corners, gentle inner shadow making the center look slightly recessed, spacious empty interior ready for menu content. Portrait orientation panel. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_panel_frame",
+      "category": "ui",
+      "aspect_ratio": "3:4",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A decorative vertical rounded rectangle window frame built from dark carved oak beams with painterly wood grain, corner joints wrapped in aged iron fittings with rivets, small carved wooden idol faces at the two top corners, protective Slavic knot carvings running along the beams, the center of the frame is a large open cutout area showing the solid green background through it. Portrait orientation frame. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_icon_gold",
+      "category": "ui",
+      "aspect_ratio": "1:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A round hammered gold coin seen straight from the front, painterly semi-realistic metal with uneven hand-struck edges, an embossed rising sun symbol with rays in the center, warm reflected light on the upper rim and deep shadow on the lower rim, one small bright glint. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_icon_soul",
+      "category": "ui",
+      "aspect_ratio": "1:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A glowing spectral wisp icon representing an ancestor soul: a small upright flame-like spirit of pale blue-white light with a softly suggested serene face, wispy trailing tendrils of mist at its base, cool inner glow with a faint teal aura, mystical and gentle not scary. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette with cool spectral accent, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_icon_faith",
+      "category": "ui",
+      "aspect_ratio": "1:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A sacred fire bowl icon representing faith: a small carved stone offering bowl holding a bright eternal flame, warm orange-gold fire with painterly licks of light, faint carved pagan sun symbols on the stone bowl, gentle embers rising, reverent warm glow. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_icon_amber",
+      "category": "ui",
+      "aspect_ratio": "1:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A polished chunk of Baltic amber icon: an irregular rounded amber nugget glowing warm honey-orange from within, a tiny ancient insect silhouette suspended inside, translucent painterly depth with bright rim light on the upper edge, one white glint, resting sacred treasure look. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_counter_bg",
+      "category": "ui",
+      "aspect_ratio": "3:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A horizontal rounded capsule HUD counter background of dark iron-banded wood, painterly semi-realistic, a soft inner shadow, a round slightly recessed empty socket on the left side ready for a currency icon and a long empty area on the right ready for numbers, thin worn iron rim tracing the edge. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_icon_star_full",
+      "category": "ui",
+      "aspect_ratio": "1:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A five-pointed star medallion of radiant hammered gold, painterly semi-realistic metal with warm amber lower half and a bright diagonal light sweep across the upper facets, slightly rounded tips, thin dark bronze rim, proud earned-achievement look. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_icon_star_empty",
+      "category": "ui",
+      "aspect_ratio": "1:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A five-pointed star medallion of dull grey weathered stone, painterly semi-realistic, flat matte shading with faint chisel marks, slightly rounded tips, thin dark rim, dormant unearned slot look. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_bar_bg",
+      "category": "ui",
+      "aspect_ratio": "8:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A long horizontal empty status bar track shaped like a rounded capsule carved into dark aged oak with an iron rim, painterly semi-realistic, the recessed inner channel in deep shadowed brown, a thin worn lighter rim along the top inner edge giving carved depth, completely empty interior ready for a fill bar. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_bar_fill_green",
+      "category": "ui",
+      "aspect_ratio": "8:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A long horizontal status bar fill shaped like a slightly smaller rounded capsule of living forest-green energy, painterly semi-realistic, brighter mossy green glossy light along the top half and deep pine green along the bottom, faint leaf-like glints inside, vital healthy look. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_bar_fill_red",
+      "category": "ui",
+      "aspect_ratio": "8:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A long horizontal status bar fill shaped like a slightly smaller rounded capsule of deep blood-red energy, painterly semi-realistic, brighter crimson light along the top half and dark wine red along the bottom, faint ember glints inside, menacing boss health look. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_icon_lock",
+      "category": "ui",
+      "aspect_ratio": "1:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A heavy early-medieval iron padlock, painterly semi-realistic, rounded forged iron body with hammer marks and rust patches, a thick arched shackle over the top, a dark keyhole in the center, cold light glint on the upper left, sturdy locked look. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_btn_pause",
+      "category": "ui",
+      "aspect_ratio": "1:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A round wooden game control button with an iron rim, painterly semi-realistic, bearing two bold vertical carved pause bars in the center painted pale bone-cream, soft warm highlight on the upper left of the wood, raised unpressed state. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_btn_play",
+      "category": "ui",
+      "aspect_ratio": "1:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A round wooden game control button with an iron rim, painterly semi-realistic, bearing one bold carved triangular play arrow pointing right in the center painted pale bone-cream, soft warm highlight on the upper left of the wood, raised unpressed state. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_btn_speed_2x",
+      "category": "ui",
+      "aspect_ratio": "1:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A round wooden game control button with an iron rim, painterly semi-realistic, bearing two bold carved triangular fast-forward arrows pointing right in the center painted pale bone-cream, soft warm highlight on the upper left of the wood, raised unpressed state. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_btn_exit",
+      "category": "ui",
+      "aspect_ratio": "1:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A round game close button of dark red-stained wood with an iron rim, painterly semi-realistic, bearing a bold thick carved X symbol in the center painted pale bone-cream, soft warm highlight on the upper left, raised unpressed state. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_toggle_on",
+      "category": "ui",
+      "aspect_ratio": "2:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A horizontal pill-shaped settings toggle switch in the ON state, painterly semi-realistic: the capsule track is living moss green with a warm light along the top edge, a round polished amber knob sits on the right side of the track with a bright glint, activated vital look. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_toggle_off",
+      "category": "ui",
+      "aspect_ratio": "2:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A horizontal pill-shaped settings toggle switch in the OFF state, painterly semi-realistic: the capsule track is dull grey weathered wood with flat matte shading, a round pale bone knob sits on the left side of the track with a soft subtle highlight, calm deactivated look. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_slider_track",
+      "category": "ui",
+      "aspect_ratio": "8:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A long thin horizontal volume slider track shaped like a rounded capsule groove carved into dark oak, painterly semi-realistic, the recessed channel in deep shadowed brown with a thin worn lighter rim along its top inner edge, smooth even shape from end to end. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_slider_knob",
+      "category": "ui",
+      "aspect_ratio": "1:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A round slider handle knob shaped like a polished amber bead set in a thin iron ring, painterly semi-realistic, warm honey glow from within, a crisp glint on the upper left and a deep shadow crescent on the lower right, tactile grippy look. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_tower_bar_bg",
+      "category": "ui",
+      "aspect_ratio": "6:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A long horizontal bottom HUD bar for tower selection, painterly semi-realistic: a sturdy shelf of dark oak planks bound with aged iron straps and rivets, a row of subtle shadowed empty rectangular niches across its length ready for tower cards, slight wear and scratches, top edge catching warm light. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_tower_slot",
+      "category": "ui",
+      "aspect_ratio": "1:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A square tower selection card frame for a bottom HUD bar, painterly semi-realistic: a small carved oak frame with a thin iron border and tiny rivets in the corners, faint protective Slavic knot carving along the top edge, the interior an empty slightly recessed dark parchment area ready for a tower portrait. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_radial_menu_bg",
+      "category": "ui",
+      "aspect_ratio": "1:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A circular radial context menu background for tower actions, painterly semi-realistic: a ring of aged carved oak segments bound by an outer iron hoop, four evenly spaced round empty wooden sockets on the ring ready for action icons, the very center of the ring is an open hole showing the solid green background through it, subtle warm light on upper segments. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_wave_banner",
+      "category": "ui",
+      "aspect_ratio": "4:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A horizontal announcement banner of weathered woven cloth stretched between two short carved wooden poles, painterly semi-realistic, deep forest green fabric with frayed edges and a thin amber embroidered border, empty center ready for wave number text, small iron rings attaching cloth to the poles. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    },
+    {
+      "id": "ui_toast_bg",
+      "category": "ui",
+      "aspect_ratio": "4:1",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "A horizontal rounded rectangle notification toast of dark aged leather stretched on a thin wooden frame, painterly semi-realistic, a thin amber stitched border tracing the inner edge, a round empty lighter socket on the left side ready for an icon, the rest of the interior empty ready for a short message, soft shadow depth along the bottom edge. The object is centered and fully visible with an even margin around it. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, weathered natural materials, crisp silhouette, mobile game UI. Transparent background on #00FF00.",
+      "negative": " "
+    }
+  ]
+}

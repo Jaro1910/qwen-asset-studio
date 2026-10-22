@@ -1,0 +1,21 @@
+# Python environments and caches
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Local settings - config.json holds your Gemini API key, never commit it
+backend_linux/config.json
+backend_linux/config_edit.json
+backend_linux/jezyk.json
+backend_linux/_edits_selected.json
+
+# Logs
+studio_log.txt
+*.log
+
+# Generated images and edit manifests created by Edit Studio
+output/
+refs/
+_raw/
+edits.json

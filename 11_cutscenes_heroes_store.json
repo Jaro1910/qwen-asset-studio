@@ -1,0 +1,181 @@
+{
+  "global": {
+    "note": "Crusader Defence - manifest 11: cutscenki dolaczenia WODZOW (12 ilustracji, etapy 16/20/24/28) + grafiki GOOGLE PLAY (ikona gry, ikona adaptacyjna, feature graphic). KAMERA: cutscenki = kinowa kamera na wysokosci oczu; ikona = plasko na wprost; feature graphic = kinowa panorama. Cutscenki i feature graphic sa NIEPRZEZROCZYSTE (pelne tlo malowane) - w ich promptach NIE wolno uzywac slow 'green'/'chroma'/'#00FF00', bo backend wstrzykuje wtedy zielone tlo w niebo. Jedyny transparentny asset tutaj to store_icon_adaptive_foreground i tylko on ma 'Transparent background on #00FF00'. Qwen-Image nie obsluguje negative prompt - pole negative ZAWSZE ' '. Zrzuty ekranu do sklepu NIE sa generowane - robimy je z gry.",
+    "style_reference": "Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (deep forest tones, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, cinematic composition, high readability on mobile, consistent lighting from upper left.",
+    "negative": " "
+  },
+  "assets": [
+    {
+      "id": "cs_hero_samo_s1",
+      "category": "cutscene_stage",
+      "hero": "samo",
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: cinematic eye-level camera, natural human viewpoint at standing height, a wide storybook frame; never a top-down map view, never an isometric game view, never a worm's-eye view. The same cinematic camera in every asset of this set. A vertical cinematic scene for a Slavic tower defence game: a night clearing beneath a towering carved wooden idol of the four-faced god Swietowit, eight separate tribal bonfires burning in a wide ring around it, each fire surrounded by a small cluster of Slavic warriors under its own banner - a wolf, a bear, a boar, a solar wheel, a thunder mark - smoke rising into a starry sky, the tribes standing apart from one another, wary, none of them mixing. Full-bleed illustration filling the whole frame edge to edge, no border, no frame, no text, no letters, no numbers, no watermark, no logo. Opaque painted background, fully painted sky and ground, no cut-out subject, no transparency. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (deep forest tones, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, cinematic composition, high readability on mobile, consistent lighting from upper left.",
+      "negative": " "
+    },
+    {
+      "id": "cs_hero_samo_s2",
+      "category": "cutscene_stage",
+      "hero": "samo",
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: cinematic eye-level camera, natural human viewpoint at standing height, a wide storybook frame; never a top-down map view, never an isometric game view, never a worm's-eye view. The same cinematic camera in every asset of this set. A vertical cinematic scene for a Slavic tower defence game: the tribal assembly at dusk in the ring of bonfires, elders arguing with raised arms and jabbing fingers, spears leaning against a rough wooden speaking-post in the middle; one man - a broad-shouldered middle-aged merchant-chieftain with long braided brown hair and beard with a single grey streak, in layered leather and fur over a dark tunic and a bronze torc - has risen to his feet and speaks, and every face in the circle has turned toward him, the argument dying mid-word. Full-bleed illustration filling the whole frame edge to edge, no border, no frame, no text, no letters, no numbers, no watermark, no logo. Opaque painted background, fully painted sky and ground, no cut-out subject, no transparency. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (deep forest tones, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, cinematic composition, high readability on mobile, consistent lighting from upper left.",
+      "negative": " "
+    },
+    {
+      "id": "cs_hero_samo_s3",
+      "category": "cutscene_stage",
+      "hero": "samo",
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: cinematic eye-level camera, natural human viewpoint at standing height, a wide storybook frame; never a top-down map view, never an isometric game view, never a worm's-eye view. The same cinematic camera in every asset of this set. A vertical cinematic scene for a Slavic tower defence game: cold clear dawn, eight tall spear-shafts driven into the earth in one tight circle around the four-faced Swietowit idol, each shaft hung with a different tribal banner, all now leaning in toward a single centre; the elected prince Samo, a middle-aged Slavic chieftain in layered leather, fur mantle and bronze torc, stands with one open hand laid on the central shaft, his back to us, facing the rising sun over a forest of wooden watchtowers. Full-bleed illustration filling the whole frame edge to edge, no border, no frame, no text, no letters, no numbers, no watermark, no logo. Opaque painted background, fully painted sky and ground, no cut-out subject, no transparency. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (deep forest tones, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, cinematic composition, high readability on mobile, consistent lighting from upper left.",
+      "negative": " "
+    },
+    {
+      "id": "cs_hero_warcislaw_s1",
+      "category": "cutscene_stage",
+      "hero": "warcislaw",
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: cinematic eye-level camera, natural human viewpoint at standing height, a wide storybook frame; never a top-down map view, never an isometric game view, never a worm's-eye view. The same cinematic camera in every asset of this set. A vertical cinematic scene for a Slavic tower defence game: night, a burning Slavic palisade wall broken open in the middle, a long column of crusader knights in white surcoats with red crosses pouring through the breach in disciplined ranks, torchlight on iron helmets, defenders' broken shields scattered in the churned mud in the foreground, sparks and smoke filling the upper half of the frame, an atmosphere of walls failing. Full-bleed illustration filling the whole frame edge to edge, no border, no frame, no text, no letters, no numbers, no watermark, no logo. Opaque painted background, fully painted sky and ground, no cut-out subject, no transparency. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (deep forest tones, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, cinematic composition, high readability on mobile, consistent lighting from upper left.",
+      "negative": " "
+    },
+    {
+      "id": "cs_hero_warcislaw_s2",
+      "category": "cutscene_stage",
+      "hero": "warcislaw",
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: cinematic eye-level camera, natural human viewpoint at standing height, a wide storybook frame; never a top-down map view, never an isometric game view, never a worm's-eye view. The same cinematic camera in every asset of this set. A vertical cinematic scene for a Slavic tower defence game: out of a wall of battlefield smoke walks a wedge of about thirty Slavic warriors with heavy bearded axes, mud-caked and grim, striking the crusader column from behind; at their head strides WARCISLAW - a powerful battle-scarred Slavic warrior in his prime, shaved sides with a warrior's topknot, thick moustache, scale armour and iron-studded leather, a wolf-fur shoulder, a heavy bearded axe raised - his mouth open in a war cry, crusaders turning in alarm. Full-bleed illustration filling the whole frame edge to edge, no border, no frame, no text, no letters, no numbers, no watermark, no logo. Opaque painted background, fully painted sky and ground, no cut-out subject, no transparency. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (deep forest tones, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, cinematic composition, high readability on mobile, consistent lighting from upper left.",
+      "negative": " "
+    },
+    {
+      "id": "cs_hero_warcislaw_s3",
+      "category": "cutscene_stage",
+      "hero": "warcislaw",
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: cinematic eye-level camera, natural human viewpoint at standing height, a wide storybook frame; never a top-down map view, never an isometric game view, never a worm's-eye view. The same cinematic camera in every asset of this set. A vertical cinematic scene for a Slavic tower defence game: dawn after the battle inside a Slavic stronghold, two men face each other across a dying campfire - on the left the elected prince Samo, older, in fur mantle and bronze torc, arms folded, calm; on the right the voivode Warcislaw, still bloodied, axe resting head-down on the ground under his hand, chin lifted; behind them his retinue of axemen waits in the mist, behind Samo the wooden god-towers of the settlement rise - two ways of making war meeting as equals. Full-bleed illustration filling the whole frame edge to edge, no border, no frame, no text, no letters, no numbers, no watermark, no logo. Opaque painted background, fully painted sky and ground, no cut-out subject, no transparency. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (deep forest tones, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, cinematic composition, high readability on mobile, consistent lighting from upper left.",
+      "negative": " "
+    },
+    {
+      "id": "cs_hero_radogost_s1",
+      "category": "cutscene_stage",
+      "hero": "radogost",
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: cinematic eye-level camera, natural human viewpoint at standing height, a wide storybook frame; never a top-down map view, never an isometric game view, never a worm's-eye view. The same cinematic camera in every asset of this set. A vertical cinematic scene for a Slavic tower defence game: a sacred oak grove being felled and burned by crusaders - axemen in white surcoats with red crosses hacking at ancient oaks hung with ribbons and votive skulls, one huge oak already toppling, fire climbing its crown, a priest of the invaders holding up a cross-staff and directing the work with a raised hand; the villagers' huts in the background stand untouched, deliberately spared - only the holy trees burn. Full-bleed illustration filling the whole frame edge to edge, no border, no frame, no text, no letters, no numbers, no watermark, no logo. Opaque painted background, fully painted sky and ground, no cut-out subject, no transparency. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (deep forest tones, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, cinematic composition, high readability on mobile, consistent lighting from upper left.",
+      "negative": " "
+    },
+    {
+      "id": "cs_hero_radogost_s2",
+      "category": "cutscene_stage",
+      "hero": "radogost",
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: cinematic eye-level camera, natural human viewpoint at standing height, a wide storybook frame; never a top-down map view, never an isometric game view, never a worm's-eye view. The same cinematic camera in every asset of this set. A vertical cinematic scene for a Slavic tower defence game: RADOGOST the zerca - a lean Slavic pagan priest, grey-bearded, in a long pale ritual robe with carved bone and amber amulets, a wooden staff across his back - stands ankle-deep in the grey ash of the burned grove among charred stumps, driving the first of eight carved wooden stakes into the ground with both hands; behind him, half-lit by dawn, the survivors of the village walk in silently carrying the remaining stakes, no weapons, only wood. Full-bleed illustration filling the whole frame edge to edge, no border, no frame, no text, no letters, no numbers, no watermark, no logo. Opaque painted background, fully painted sky and ground, no cut-out subject, no transparency. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (deep forest tones, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, cinematic composition, high readability on mobile, consistent lighting from upper left.",
+      "negative": " "
+    },
+    {
+      "id": "cs_hero_radogost_s3",
+      "category": "cutscene_stage",
+      "hero": "radogost",
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: cinematic eye-level camera, natural human viewpoint at standing height, a wide storybook frame; never a top-down map view, never an isometric game view, never a worm's-eye view. The same cinematic camera in every asset of this set. A vertical cinematic scene for a Slavic tower defence game: night, a ring of eight carved stakes glowing with a warm amber inner light around a small wooden Slavic temple, a translucent dome of light standing over the temple like a shell of hard air; a crusader knight in the foreground has struck the barrier with his sword and the blade is bouncing back in a burst of sparks, his body recoiling, while Radogost stands calm inside the circle with his arms raised. Full-bleed illustration filling the whole frame edge to edge, no border, no frame, no text, no letters, no numbers, no watermark, no logo. Opaque painted background, fully painted sky and ground, no cut-out subject, no transparency. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (deep forest tones, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, cinematic composition, high readability on mobile, consistent lighting from upper left.",
+      "negative": " "
+    },
+    {
+      "id": "cs_hero_dobrogost_s1",
+      "category": "cutscene_stage",
+      "hero": "dobrogost",
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: cinematic eye-level camera, natural human viewpoint at standing height, a wide storybook frame; never a top-down map view, never an isometric game view, never a worm's-eye view. The same cinematic camera in every asset of this set. A vertical cinematic scene for a Slavic tower defence game: a bird's-height wide shot of a valley at midday - on one side a small Slavic warband of a few hundred behind a wooden palisade, on the other side an enormous crusader host filling the entire far slope with thousands of banners and tents, dwarfing them; in the near foreground, seen from behind, an old Slavic assembly elder in a plain grey mantle stands counting the enemy on the fingers of one hand. Full-bleed illustration filling the whole frame edge to edge, no border, no frame, no text, no letters, no numbers, no watermark, no logo. Opaque painted background, fully painted sky and ground, no cut-out subject, no transparency. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (deep forest tones, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, cinematic composition, high readability on mobile, consistent lighting from upper left.",
+      "negative": " "
+    },
+    {
+      "id": "cs_hero_dobrogost_s2",
+      "category": "cutscene_stage",
+      "hero": "dobrogost",
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: cinematic eye-level camera, natural human viewpoint at standing height, a wide storybook frame; never a top-down map view, never an isometric game view, never a worm's-eye view. The same cinematic camera in every asset of this set. A vertical cinematic scene for a Slavic tower defence game: a muddy village yard, DOBROGOST - an older, weathered Slavic assembly elder with a short grey beard, plain wool mantle, no armour - showing a group of farmers, smiths and herders how to hold a pitchfork and a hay-hook like weapons, correcting a young man's grip with his own hands; women and boys watch from a hut doorway, chickens underfoot, a warm ordinary afternoon light, everything about the scene practical rather than heroic. Full-bleed illustration filling the whole frame edge to edge, no border, no frame, no text, no letters, no numbers, no watermark, no logo. Opaque painted background, fully painted sky and ground, no cut-out subject, no transparency. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (deep forest tones, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, cinematic composition, high readability on mobile, consistent lighting from upper left.",
+      "negative": " "
+    },
+    {
+      "id": "cs_hero_dobrogost_s3",
+      "category": "cutscene_stage",
+      "hero": "dobrogost",
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: cinematic eye-level camera, natural human viewpoint at standing height, a wide storybook frame; never a top-down map view, never an isometric game view, never a worm's-eye view. The same cinematic camera in every asset of this set. A vertical cinematic scene for a Slavic tower defence game: the crusader army drawn up in ranks before a wooden Slavic temple in the valley below - and on the ridge behind them, breaking the skyline, a long ragged second line of hundreds of Slavic peasants appearing over the crest with pitchforks, axes, hunting bows and smith's hammers, backlit by the low sun; the knights below are turning to look back, banners faltering; Dobrogost stands at the centre of the ridge, an ordinary man among ordinary men. Full-bleed illustration filling the whole frame edge to edge, no border, no frame, no text, no letters, no numbers, no watermark, no logo. Opaque painted background, fully painted sky and ground, no cut-out subject, no transparency. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (deep forest tones, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, cinematic composition, high readability on mobile, consistent lighting from upper left.",
+      "negative": " "
+    },
+    {
+      "id": "store_icon_512",
+      "category": "store",
+      "aspect_ratio": "1:1",
+      "resolution": "512x512",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: perfectly flat, straight-on front view like a 2D app icon - zero perspective, zero tilt, zero foreshortening, the subject parallel to the screen. A mobile game app icon: the four-faced wooden idol of the Slavic god SWIETOWIT, carved from ancient dark oak, shown from the chest up and centred, all four stern faces suggested by the carved planes of the head, a sword held across the body, a drinking horn in the raised hand, deep carved Slavic knotwork and solar wheels across the wood, faint warm amber light glowing from within the carved lines; behind the idol a simple circular emblem field of deep twilight sky and a low band of dark forest, a single warm dawn glow behind the head. Bold, simple, instantly readable silhouette at 48 pixels, strong contrast between the idol and the background, subject fills the frame with a small even margin, no text, no letters, no logo, no watermark, no border. Opaque painted background filling the whole square. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (deep forest tones, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, cinematic composition, high readability on mobile, consistent lighting from upper left.",
+      "negative": " "
+    },
+    {
+      "id": "store_icon_adaptive_foreground",
+      "category": "store",
+      "aspect_ratio": "1:1",
+      "resolution": "432x432",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: perfectly flat, straight-on front view like a 2D app icon - zero perspective, zero tilt, zero foreshortening, the subject parallel to the screen. The four-faced wooden idol of the Slavic god SWIETOWIT alone, carved from ancient dark oak, chest up, centred, all four stern carved faces, a sword across the body and a drinking horn in the raised hand, deep carved Slavic knotwork and solar wheels, faint warm amber light glowing from within the carved lines, crisp readable silhouette. The idol occupies only the central 60 percent of the image with generous empty margin on every side (Android adaptive icon safe zone), no background elements at all, no ground, no sky, no text, no border. Transparent background on #00FF00. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (deep forest tones, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, cinematic composition, high readability on mobile, consistent lighting from upper left.",
+      "negative": " "
+    },
+    {
+      "id": "store_icon_adaptive_background",
+      "category": "store",
+      "aspect_ratio": "1:1",
+      "resolution": "432x432",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: perfectly flat, straight-on front view like a 2D app icon - zero perspective, zero tilt, zero foreshortening, the subject parallel to the screen. A plain decorative backdrop plate for an Android adaptive app icon: an evenly lit surface of aged dark oak wood grain in deep earthy Slavic tones, a single large shallow-carved solar wheel ornament centred and very subtle, a soft warm amber vignette glow radiating from the centre, edges slightly darker. Absolutely no character, no idol, no figure, no text, no letters, no logo - only the ornamented surface, evenly filling the whole square, safe to crop to a circle or rounded square. Opaque painted background. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (deep forest tones, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, cinematic composition, high readability on mobile, consistent lighting from upper left.",
+      "negative": " "
+    },
+    {
+      "id": "store_feature_graphic",
+      "category": "store",
+      "aspect_ratio": "1024:500",
+      "resolution": "1024x500",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: cinematic eye-level camera, natural human viewpoint, a wide panoramic banner frame; never a top-down map view, never an isometric game view. A wide horizontal key-art banner split down the middle into two halves that meet in the centre. LEFT HALF: full battle - crusader knights in white surcoats with red crosses assaulting a Slavic wooden palisade, siege ladders, burning arrows, black smoke, mud, a wooden defence tower crowned with a carved thunder idol hurling a lightning bolt down into the attackers, dark storm sky, embers, chaos and iron. RIGHT HALF: the same land untouched and at peace - an intact sacred grove and holy circle, a carved four-faced Swietowit idol standing calm among ancient oaks hung with ribbons, a still lake, mist, deer at the treeline, golden dawn light, deep quiet woodland. The seam between the two halves runs vertically through the centre of the banner, where the smoke and storm of the left visibly dissolve into the clear dawn air of the right - one continuous landscape, one horizon line, war on one side, the world worth defending on the other. Wide cinematic composition, the centre of the image kept visually calm and uncluttered, no text, no letters, no title, no logo, no watermark, no border, no user interface. Opaque painted background filling the whole banner. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (deep forest tones, amber, aged oak wood, iron grey, blood red accents), heroic early-medieval Slavic mythic atmosphere, weathered natural materials, cinematic composition, high readability on mobile, consistent lighting from upper left.",
+      "negative": " "
+    }
+  ]
+}

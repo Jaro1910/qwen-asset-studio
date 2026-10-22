@@ -1,0 +1,231 @@
+{
+  "global": {
+    "note": "SIECI SCIEZEK v8: 5 obrazow path_network_<biom> (1:1, max rozdzielczosc) do RECZNEGO pociecia na kafle. Nazewnictwo pocietych kafli dla silnika: path_straight_<biom>.png (baza PIONOWA), path_curve_<biom>.png (L: wejscia LEWO i DOL), path_t_split_<biom>.png (LEWO-PRAWO + odnoga w DOL), path_cross_<biom>.png (4 strony). Folder: assets/sprites/maps/path_tiles/. Silnik dobiera kafel po biomie poziomu i obraca; fallback = nazwy bez sufiksu biomu. KAFLE v7: sciezki NIE sa generowane - buduje je deterministycznie zrob_kafle.py z dwoch tekstur: gruntu (uzyj wprost wygenerowanego map_bg_<biom>.png) i ubitej ziemi (texture_dirt_path - JEDYNA generacja). Osie sciezek co do piksela na liniach srodkowych, laczenia w CENTRUM kafla, wejscia/wyjscia srodkami bokow. KAFLE v6: czysty top-down 90 stopni, OPAQUE, grunt wypelnia caly kwadrat, sciezka o stalej szerokosci wchodzi/wychodzi DOKLADNIE srodkami bokow (straight: gora-dol | curve: dol-prawo | T: lewo-prawo + odnoga w dol | start/end: plaskie, bez obiektow pionowych). Tla map w tej samej plaskiej kamerze. Orientacje bazowe - silnik obraca kafle. TLA v5: WYLACZNIE plaska powierzchnia gruntu (pusta plansza) - zadnych drzew, skal, krzakow ani obiektow pionowych; cala scenografia pionowa = sprite'y przeszkod rozstawiane przez silnik na polach siatki (zgodnie z planem: niszczalne, daja Gold). KAMERA: tla/kafle = wysoki widok terenu ~60 stopni bez horyzontu; przeszkody = 3/4 top-down jak jednostki. PRZESZKODY v4: strip DOKLADNIE 3 klatek = 3 jawne stany zniszczenia (cala/pekniera/ruina), klatka 512x512. Tla biomow i kafle sciezki bez zmian (pojedyncze). negative ' '. ",
+    "style_reference": "Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (forest green, amber, aged oak wood, iron grey, blood red accents), early-medieval Slavic mythic atmosphere, weathered natural materials, top-down 3/4 game map perspective, high readability on mobile.",
+    "negative": " "
+  },
+  "assets": [
+    {
+      "id": "map_bg_borderland",
+      "category": "map_background",
+      "biome": "borderland",
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: perfectly vertical TOP-DOWN orthographic view, camera directly overhead at 90 degrees, completely FLAT like a cell of a texture atlas - zero perspective, zero isometric angle, zero 3D sides, no visible tile thickness, no horizon, no sky. This is ONLY a flat, open GROUND SURFACE plane - bare terrain seen from above, like an empty game board waiting for objects to be placed on top of it later. Every detail lies COMPLETELY FLAT on the ground: color patches, trampled marks, tiny flat pebbles and ground texture. The entire frame is walkable open ground with even, gentle variation and no focal points. The terrain is a plain of soft lush meadow grass with flat patches of darker moss, light dry grass, bare trampled earth and scattered tiny flat pebbles, cool overcast daylight. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, high readability on mobile, even lighting across the frame.",
+      "negative": " "
+    },
+    {
+      "id": "path_network_borderland",
+      "category": "path_network",
+      "biome": "borderland",
+      "aspect_ratio": "1:1",
+      "resolution": "2048x2048",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: perfectly vertical TOP-DOWN orthographic view, camera directly overhead at 90 degrees, completely flat like a game texture - zero perspective, zero isometric angle, no horizon, no sky. A single large game-art image of a dirt path network, designed for cutting into square map tiles. The ground is a continuous field of soft lush meadow grass with flat darker moss patches, light dry grass and tiny flat pebbles, covering one hundred percent of the image edge to edge - the ground itself is the background, no empty space, no border, no frame. The path is packed bare brown earth with faint footprints and shallow cart ruts, clearly darker than the grass. The network is drawn like a clean diagram made ONLY of PERFECTLY STRAIGHT horizontal and vertical segments. Every segment has EXACTLY THE SAME CONSTANT WIDTH along its entire length, with edges of identical thickness. All segments run precisely parallel to the image edges. The network MUST contain ALL FIVE of these elements, connected into one continuous system: (1) one long straight HORIZONTAL section, (2) one long straight VERTICAL section, (3) one sharp 90-DEGREE CORNER shaped like the letter L - a horizontal segment that stops and turns at a perfect right angle into a vertical segment, a clean squared turn, NOT a smooth arc, (4) one T-JUNCTION where a vertical segment meets the middle of a horizontal segment at a right angle, (5) one FOUR-WAY CROSSROAD where a horizontal segment and a vertical segment cross at a right angle. Generous even spacing of plain ground between the elements so each is easy to crop. Several path ends run flat off the edges of the image. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, even flat lighting, high readability on mobile.",
+      "negative": " "
+    },
+    {
+      "id": "path_network_ashland",
+      "category": "path_network",
+      "biome": "ashland",
+      "aspect_ratio": "1:1",
+      "resolution": "2048x2048",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: perfectly vertical TOP-DOWN orthographic view, camera directly overhead at 90 degrees, completely flat like a game texture - zero perspective, zero isometric angle, no horizon, no sky. A single large game-art image of a war-road network, designed for cutting into square map tiles. The ground is a continuous plain of grey ash and scorched cracked earth with flat darker soot patches, faint flat ember-glow cracks and dusted dead flat grass, covering one hundred percent of the image edge to edge - the ground itself is the background, no empty space, no border, no frame. The path is compacted dark scorched earth cleared through the ash, with heavy cart ruts and boot prints, clearly darker and browner than the surrounding pale ash. The network is drawn like a clean diagram made ONLY of PERFECTLY STRAIGHT horizontal and vertical segments. Every segment has EXACTLY THE SAME CONSTANT WIDTH along its entire length, with edges of identical thickness. All segments run precisely parallel to the image edges. The network MUST contain ALL FIVE of these elements, connected into one continuous system: (1) one long straight HORIZONTAL section, (2) one long straight VERTICAL section, (3) one sharp 90-DEGREE CORNER shaped like the letter L - a horizontal segment that stops and turns at a perfect right angle into a vertical segment, a clean squared turn, NOT a smooth arc, (4) one T-JUNCTION where a vertical segment meets the middle of a horizontal segment at a right angle, (5) one FOUR-WAY CROSSROAD where a horizontal segment and a vertical segment cross at a right angle. Generous even spacing of plain ground between the elements so each is easy to crop. Several path ends run flat off the edges of the image. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, hazy warm light over a muted grey-and-ember palette, even flat lighting, high readability on mobile.",
+      "negative": " "
+    },
+    {
+      "id": "path_network_coast",
+      "category": "path_network",
+      "biome": "coast",
+      "aspect_ratio": "1:1",
+      "resolution": "2048x2048",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: perfectly vertical TOP-DOWN orthographic view, camera directly overhead at 90 degrees, completely flat like a game texture - zero perspective, zero isometric angle, no horizon, no sky. A single large game-art image of a shore-road network, designed for cutting into square map tiles. The ground is a continuous plain of pale damp sand and dark wet mud flats with flat ripples left by water, thin flat streaks of dried salt and scattered tiny flat shells, covering one hundred percent of the image edge to edge - the ground itself is the background, no empty space, no border, no frame. The path is compacted dark wet sand hardened by marching feet and cart wheels, with shallow ruts and pressed-in flat shells, clearly darker than the pale sand. The network is drawn like a clean diagram made ONLY of PERFECTLY STRAIGHT horizontal and vertical segments. Every segment has EXACTLY THE SAME CONSTANT WIDTH along its entire length, with edges of identical thickness. All segments run precisely parallel to the image edges. The network MUST contain ALL FIVE of these elements, connected into one continuous system: (1) one long straight HORIZONTAL section, (2) one long straight VERTICAL section, (3) one sharp 90-DEGREE CORNER shaped like the letter L - a horizontal segment that stops and turns at a perfect right angle into a vertical segment, a clean squared turn, NOT a smooth arc, (4) one T-JUNCTION where a vertical segment meets the middle of a horizontal segment at a right angle, (5) one FOUR-WAY CROSSROAD where a horizontal segment and a vertical segment cross at a right angle. Generous even spacing of plain ground between the elements so each is easy to crop. Several path ends run flat off the edges of the image. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, overcast northern light over a cool sandy palette, even flat lighting, high readability on mobile.",
+      "negative": " "
+    },
+    {
+      "id": "path_network_mountains",
+      "category": "path_network",
+      "biome": "mountains",
+      "aspect_ratio": "1:1",
+      "resolution": "2048x2048",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: perfectly vertical TOP-DOWN orthographic view, camera directly overhead at 90 degrees, completely flat like a game texture - zero perspective, zero isometric angle, no horizon, no sky. A single large game-art image of a mountain-trail network, designed for cutting into square map tiles. The ground is a continuous plain of grey rocky gravel and flat stone slabs with patches of thin flat alpine grass and dustings of snow lying flat in shadowed spots, covering one hundred percent of the image edge to edge - the ground itself is the background, no empty space, no border, no frame. The path is crushed pale gravel trodden smooth, edged with small flat stones, with faint wheel ruts, clearly lighter than the dark rock around it. The network is drawn like a clean diagram made ONLY of PERFECTLY STRAIGHT horizontal and vertical segments. Every segment has EXACTLY THE SAME CONSTANT WIDTH along its entire length, with edges of identical thickness. All segments run precisely parallel to the image edges. The network MUST contain ALL FIVE of these elements, connected into one continuous system: (1) one long straight HORIZONTAL section, (2) one long straight VERTICAL section, (3) one sharp 90-DEGREE CORNER shaped like the letter L - a horizontal segment that stops and turns at a perfect right angle into a vertical segment, a clean squared turn, NOT a smooth arc, (4) one T-JUNCTION where a vertical segment meets the middle of a horizontal segment at a right angle, (5) one FOUR-WAY CROSSROAD where a horizontal segment and a vertical segment cross at a right angle. Generous even spacing of plain ground between the elements so each is easy to crop. Several path ends run flat off the edges of the image. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, crisp cold light over a granite-and-snow palette, even flat lighting, high readability on mobile.",
+      "negative": " "
+    },
+    {
+      "id": "path_network_arkona",
+      "category": "path_network",
+      "biome": "arkona",
+      "aspect_ratio": "1:1",
+      "resolution": "2048x2048",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: perfectly vertical TOP-DOWN orthographic view, camera directly overhead at 90 degrees, completely flat like a game texture - zero perspective, zero isometric angle, no horizon, no sky. A single large game-art image of a chalk-path network, designed for cutting into square map tiles. The ground is a continuous plain of windswept short coastal grass over pale chalky soil, with flat white chalk patches showing through and thin flat sandy trails, covering one hundred percent of the image edge to edge - the ground itself is the background, no empty space, no border, no frame. The path is bare trodden chalk-white ground worn through the grass, bright and pale, clearly lighter than the surrounding turf, with faint footprints and shallow ruts. The network is drawn like a clean diagram made ONLY of PERFECTLY STRAIGHT horizontal and vertical segments. Every segment has EXACTLY THE SAME CONSTANT WIDTH along its entire length, with edges of identical thickness. All segments run precisely parallel to the image edges. The network MUST contain ALL FIVE of these elements, connected into one continuous system: (1) one long straight HORIZONTAL section, (2) one long straight VERTICAL section, (3) one sharp 90-DEGREE CORNER shaped like the letter L - a horizontal segment that stops and turns at a perfect right angle into a vertical segment, a clean squared turn, NOT a smooth arc, (4) one T-JUNCTION where a vertical segment meets the middle of a horizontal segment at a right angle, (5) one FOUR-WAY CROSSROAD where a horizontal segment and a vertical segment cross at a right angle. Generous even spacing of plain ground between the elements so each is easy to crop. Several path ends run flat off the edges of the image. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, brooding stormy light over a chalk-and-sea palette, even flat lighting, high readability on mobile.",
+      "negative": " "
+    },
+    {
+      "id": "texture_dirt_path",
+      "category": "texture",
+      "aspect_ratio": "1:1",
+      "resolution": "512x512",
+      "background": "opaque",
+      "tileable": true,
+      "prompt": "CAMERA LOCK: perfectly vertical TOP-DOWN orthographic view, directly overhead, completely flat, zero perspective. A SEAMLESS, TILEABLE texture of packed bare brown earth of a well-trodden dirt path: compacted soil with faint footprints, shallow cart ruts and tiny embedded pebbles, even coverage across the whole frame with no focal point, no grass, no objects, no borders - the texture fills 100 percent of the image and its edges wrap seamlessly. Style: painterly semi-realistic fantasy game art, deep earthy palette, even flat lighting.",
+      "negative": " "
+    },
+    {
+      "id": "map_bg_ashland",
+      "category": "map_background",
+      "biome": "ashland",
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: perfectly vertical TOP-DOWN orthographic view, camera directly overhead at 90 degrees, completely FLAT like a cell of a texture atlas - zero perspective, zero isometric angle, zero 3D sides, no visible tile thickness, no horizon, no sky. This is ONLY a flat, open GROUND SURFACE plane - bare terrain seen from above, like an empty game board waiting for objects to be placed on top of it later. Every detail lies COMPLETELY FLAT on the ground: color patches, trampled marks, tiny flat pebbles and ground texture. The entire frame is walkable open ground with even, gentle variation and no focal points. The terrain is a plain of grey ash and scorched cracked earth with flat darker soot patches, faint flat ember-glow cracks and dusted dead flat grass, hazy warm light. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, high readability on mobile, even lighting across the frame.",
+      "negative": " "
+    },
+    {
+      "id": "map_bg_coast",
+      "category": "map_background",
+      "biome": "coast",
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: perfectly vertical TOP-DOWN orthographic view, camera directly overhead at 90 degrees, completely FLAT like a cell of a texture atlas - zero perspective, zero isometric angle, zero 3D sides, no visible tile thickness, no horizon, no sky. This is ONLY a flat, open GROUND SURFACE plane - bare terrain seen from above, like an empty game board waiting for objects to be placed on top of it later. Every detail lies COMPLETELY FLAT on the ground: color patches, trampled marks, tiny flat pebbles and ground texture. The entire frame is walkable open ground with even, gentle variation and no focal points. The terrain is a plain of pale damp sand and dark wet mud flats with flat ripples left by water, thin flat streaks of dried salt and scattered tiny flat shells, overcast northern light. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, high readability on mobile, even lighting across the frame.",
+      "negative": " "
+    },
+    {
+      "id": "map_bg_mountains",
+      "category": "map_background",
+      "biome": "mountains",
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: perfectly vertical TOP-DOWN orthographic view, camera directly overhead at 90 degrees, completely FLAT like a cell of a texture atlas - zero perspective, zero isometric angle, zero 3D sides, no visible tile thickness, no horizon, no sky. This is ONLY a flat, open GROUND SURFACE plane - bare terrain seen from above, like an empty game board waiting for objects to be placed on top of it later. Every detail lies COMPLETELY FLAT on the ground: color patches, trampled marks, tiny flat pebbles and ground texture. The entire frame is walkable open ground with even, gentle variation and no focal points. The terrain is a plain of grey rocky gravel and flat stone slabs with patches of thin flat alpine grass and dustings of snow lying flat in shadowed spots, crisp cold light. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, high readability on mobile, even lighting across the frame.",
+      "negative": " "
+    },
+    {
+      "id": "map_bg_arkona",
+      "category": "map_background",
+      "biome": "arkona",
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "background": "opaque",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: perfectly vertical TOP-DOWN orthographic view, camera directly overhead at 90 degrees, completely FLAT like a cell of a texture atlas - zero perspective, zero isometric angle, zero 3D sides, no visible tile thickness, no horizon, no sky. This is ONLY a flat, open GROUND SURFACE plane - bare terrain seen from above, like an empty game board waiting for objects to be placed on top of it later. Every detail lies COMPLETELY FLAT on the ground: color patches, trampled marks, tiny flat pebbles and ground texture. The entire frame is walkable open ground with even, gentle variation and no focal points. The terrain is a plain of windswept short coastal grass over pale chalky soil with flat white chalk patches showing through and thin flat sandy trails, brooding stormy light. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, deep earthy Slavic palette, high readability on mobile, even lighting across the frame.",
+      "negative": " "
+    },
+    {
+      "id": "obstacle_boulder",
+      "category": "obstacle_sprite",
+      "aspect_ratio": "1:1",
+      "resolution": "1536x512",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: three-quarter top-down game view - the camera is raised about 45 degrees above the subject, looking down at it from the front-right like a classic isometric strategy game; the subject's TOP surfaces and FRONT side are both clearly visible at the same time, a ground ellipse sits beneath it, no horizon, no sky, never a straight-on front view, never a worm's-eye view, never a flat overhead map view. The exact same camera in every frame and every asset of this set. A horizontal sprite sheet strip of EXACTLY 3 equal frames in one row, filling the image edge to edge, no gaps, no borders, no numbers, no labels. EVERY frame shows THE SAME object described below from the identical camera angle, identical position and identical scale. The 3 frames are 3 precisely defined states: FRAME 1 (intact): the object whole and pristine. FRAME 2 (damaged): THE SAME object with clear cracks, splinters and chunks broken off, debris at its base. FRAME 3 (nearly destroyed): only a low broken remain of THE SAME object - shattered rubble and fragments in the same spot, same footprint. These are sequential destruction states, not a loop. A single top-down 3/4 game object sprite, centered and fully visible with a small ground shadow: a large mossy grey granite boulder, rounded and weathered, faint lichen patches, sits as a destructible obstacle blocking a build tile. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (forest green, amber, aged oak wood, iron grey, blood red accents), early-medieval Slavic mythic atmosphere, weathered natural materials, top-down 3/4 game map perspective, high readability on mobile. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "the object whole and pristine (intact state)",
+        "THE SAME object with clear cracks, splinters and chunks broken off, debris at its base (damaged state)",
+        "only a low broken remain of THE SAME object - shattered rubble in the same spot and footprint (nearly destroyed state)"
+      ],
+      "frame_resolution": "512x512"
+    },
+    {
+      "id": "obstacle_tree",
+      "category": "obstacle_sprite",
+      "aspect_ratio": "1:1",
+      "resolution": "1536x512",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: three-quarter top-down game view - the camera is raised about 45 degrees above the subject, looking down at it from the front-right like a classic isometric strategy game; the subject's TOP surfaces and FRONT side are both clearly visible at the same time, a ground ellipse sits beneath it, no horizon, no sky, never a straight-on front view, never a worm's-eye view, never a flat overhead map view. The exact same camera in every frame and every asset of this set. A horizontal sprite sheet strip of EXACTLY 3 equal frames in one row, filling the image edge to edge, no gaps, no borders, no numbers, no labels. EVERY frame shows THE SAME object described below from the identical camera angle, identical position and identical scale. The 3 frames are 3 precisely defined states: FRAME 1 (intact): the object whole and pristine. FRAME 2 (damaged): THE SAME object with clear cracks, splinters and chunks broken off, debris at its base. FRAME 3 (nearly destroyed): only a low broken remain of THE SAME object - shattered rubble and fragments in the same spot, same footprint. These are sequential destruction states, not a loop. A single top-down 3/4 game object sprite, centered and fully visible with a small ground shadow: a tall healthy oak tree with a thick gnarled trunk and full leafy canopy, a destructible obstacle occupying a build tile. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (forest green, amber, aged oak wood, iron grey, blood red accents), early-medieval Slavic mythic atmosphere, weathered natural materials, top-down 3/4 game map perspective, high readability on mobile. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "the object whole and pristine (intact state)",
+        "THE SAME object with clear cracks, splinters and chunks broken off, debris at its base (damaged state)",
+        "only a low broken remain of THE SAME object - shattered rubble in the same spot and footprint (nearly destroyed state)"
+      ],
+      "frame_resolution": "512x512"
+    },
+    {
+      "id": "obstacle_stump",
+      "category": "obstacle_sprite",
+      "aspect_ratio": "1:1",
+      "resolution": "1536x512",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: three-quarter top-down game view - the camera is raised about 45 degrees above the subject, looking down at it from the front-right like a classic isometric strategy game; the subject's TOP surfaces and FRONT side are both clearly visible at the same time, a ground ellipse sits beneath it, no horizon, no sky, never a straight-on front view, never a worm's-eye view, never a flat overhead map view. The exact same camera in every frame and every asset of this set. A horizontal sprite sheet strip of EXACTLY 3 equal frames in one row, filling the image edge to edge, no gaps, no borders, no numbers, no labels. EVERY frame shows THE SAME object described below from the identical camera angle, identical position and identical scale. The 3 frames are 3 precisely defined states: FRAME 1 (intact): the object whole and pristine. FRAME 2 (damaged): THE SAME object with clear cracks, splinters and chunks broken off, debris at its base. FRAME 3 (nearly destroyed): only a low broken remain of THE SAME object - shattered rubble and fragments in the same spot, same footprint. These are sequential destruction states, not a loop. A single top-down 3/4 game object sprite, centered and fully visible with a small ground shadow: a wide old tree stump with exposed roots and a few small mushrooms, low destructible obstacle. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (forest green, amber, aged oak wood, iron grey, blood red accents), early-medieval Slavic mythic atmosphere, weathered natural materials, top-down 3/4 game map perspective, high readability on mobile. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "the object whole and pristine (intact state)",
+        "THE SAME object with clear cracks, splinters and chunks broken off, debris at its base (damaged state)",
+        "only a low broken remain of THE SAME object - shattered rubble in the same spot and footprint (nearly destroyed state)"
+      ],
+      "frame_resolution": "512x512"
+    },
+    {
+      "id": "obstacle_bush",
+      "category": "obstacle_sprite",
+      "aspect_ratio": "1:1",
+      "resolution": "1536x512",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: three-quarter top-down game view - the camera is raised about 45 degrees above the subject, looking down at it from the front-right like a classic isometric strategy game; the subject's TOP surfaces and FRONT side are both clearly visible at the same time, a ground ellipse sits beneath it, no horizon, no sky, never a straight-on front view, never a worm's-eye view, never a flat overhead map view. The exact same camera in every frame and every asset of this set. A horizontal sprite sheet strip of EXACTLY 3 equal frames in one row, filling the image edge to edge, no gaps, no borders, no numbers, no labels. EVERY frame shows THE SAME object described below from the identical camera angle, identical position and identical scale. The 3 frames are 3 precisely defined states: FRAME 1 (intact): the object whole and pristine. FRAME 2 (damaged): THE SAME object with clear cracks, splinters and chunks broken off, debris at its base. FRAME 3 (nearly destroyed): only a low broken remain of THE SAME object - shattered rubble and fragments in the same spot, same footprint. These are sequential destruction states, not a loop. A single top-down 3/4 game object sprite, centered and fully visible with a small ground shadow: a dense thorny wild bush with dark green leaves and a few red berries, low destructible obstacle. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (forest green, amber, aged oak wood, iron grey, blood red accents), early-medieval Slavic mythic atmosphere, weathered natural materials, top-down 3/4 game map perspective, high readability on mobile. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "the object whole and pristine (intact state)",
+        "THE SAME object with clear cracks, splinters and chunks broken off, debris at its base (damaged state)",
+        "only a low broken remain of THE SAME object - shattered rubble in the same spot and footprint (nearly destroyed state)"
+      ],
+      "frame_resolution": "512x512"
+    },
+    {
+      "id": "obstacle_ruins",
+      "category": "obstacle_sprite",
+      "aspect_ratio": "1:1",
+      "resolution": "1536x512",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: three-quarter top-down game view - the camera is raised about 45 degrees above the subject, looking down at it from the front-right like a classic isometric strategy game; the subject's TOP surfaces and FRONT side are both clearly visible at the same time, a ground ellipse sits beneath it, no horizon, no sky, never a straight-on front view, never a worm's-eye view, never a flat overhead map view. The exact same camera in every frame and every asset of this set. A horizontal sprite sheet strip of EXACTLY 3 equal frames in one row, filling the image edge to edge, no gaps, no borders, no numbers, no labels. EVERY frame shows THE SAME object described below from the identical camera angle, identical position and identical scale. The 3 frames are 3 precisely defined states: FRAME 1 (intact): the object whole and pristine. FRAME 2 (damaged): THE SAME object with clear cracks, splinters and chunks broken off, debris at its base. FRAME 3 (nearly destroyed): only a low broken remain of THE SAME object - shattered rubble and fragments in the same spot, same footprint. These are sequential destruction states, not a loop. A single top-down 3/4 game object sprite, centered and fully visible with a small ground shadow: a small crumbling remnant of an old stone wall overgrown with ivy, moss-covered fallen blocks, destructible obstacle. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (forest green, amber, aged oak wood, iron grey, blood red accents), early-medieval Slavic mythic atmosphere, weathered natural materials, top-down 3/4 game map perspective, high readability on mobile. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "the object whole and pristine (intact state)",
+        "THE SAME object with clear cracks, splinters and chunks broken off, debris at its base (damaged state)",
+        "only a low broken remain of THE SAME object - shattered rubble in the same spot and footprint (nearly destroyed state)"
+      ],
+      "frame_resolution": "512x512"
+    },
+    {
+      "id": "obstacle_shrine",
+      "category": "obstacle_sprite",
+      "aspect_ratio": "1:1",
+      "resolution": "1536x512",
+      "background": "transparent",
+      "tileable": false,
+      "prompt": "CAMERA LOCK: three-quarter top-down game view - the camera is raised about 45 degrees above the subject, looking down at it from the front-right like a classic isometric strategy game; the subject's TOP surfaces and FRONT side are both clearly visible at the same time, a ground ellipse sits beneath it, no horizon, no sky, never a straight-on front view, never a worm's-eye view, never a flat overhead map view. The exact same camera in every frame and every asset of this set. A horizontal sprite sheet strip of EXACTLY 3 equal frames in one row, filling the image edge to edge, no gaps, no borders, no numbers, no labels. EVERY frame shows THE SAME object described below from the identical camera angle, identical position and identical scale. The 3 frames are 3 precisely defined states: FRAME 1 (intact): the object whole and pristine. FRAME 2 (damaged): THE SAME object with clear cracks, splinters and chunks broken off, debris at its base. FRAME 3 (nearly destroyed): only a low broken remain of THE SAME object - shattered rubble and fragments in the same spot, same footprint. These are sequential destruction states, not a loop. A single top-down 3/4 game object sprite, centered and fully visible with a small ground shadow: a small weathered roadside wooden shrine post carved with a faint god-face and a tiny offering ledge, destructible obstacle giving extra gold. Style: painterly semi-realistic fantasy game art, rich textured brushstrokes, dramatic soft lighting, deep earthy Slavic palette (forest green, amber, aged oak wood, iron grey, blood red accents), early-medieval Slavic mythic atmosphere, weathered natural materials, top-down 3/4 game map perspective, high readability on mobile. Transparent background on #00FF00.",
+      "negative": " ",
+      "frames": 3,
+      "frame_states": [
+        "the object whole and pristine (intact state)",
+        "THE SAME object with clear cracks, splinters and chunks broken off, debris at its base (damaged state)",
+        "only a low broken remain of THE SAME object - shattered rubble in the same spot and footprint (nearly destroyed state)"
+      ],
+      "frame_resolution": "512x512"
+    }
+  ]
+}
