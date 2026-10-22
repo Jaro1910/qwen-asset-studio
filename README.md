@@ -46,8 +46,8 @@ backgrounds removed automatically. The raised-sword warrior was made with Edit S
 
 ## Requirements
 
-- **Linux** (tested on Ubuntu 24.04) with Python **3.11+**. Windows works too – see
-  [`JAK_NA_WINDOWS.txt`](JAK_NA_WINDOWS.txt) (step-by-step guide, in Polish).
+- **Linux** (tested on Ubuntu 24.04) with Python **3.11+**. Windows works too – step-by-step guide:
+  [`WINDOWS_INSTALL.txt`](WINDOWS_INSTALL.txt) (Polish version: [`JAK_NA_WINDOWS.txt`](JAK_NA_WINDOWS.txt)).
 - **NVIDIA GPU(s)** with a driver supporting CUDA 12.8. The default setup splits the model over two cards
   (24 GB + 20 GB); a single 48 GB card works too – set `MAX_MEMORY` in the service.
 - ~35 GB of disk for the model weights, ~10 GB for the Python environments, ~1 GB for the `rembg` model

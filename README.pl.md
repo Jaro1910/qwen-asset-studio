@@ -47,7 +47,7 @@ Wojownik z uniesionym mieczem powstał w Edit Studio z portretu obok.</sub>
 ## Wymagania
 
 - **Linux** (testowane na Ubuntu 24.04), Python **3.11+**. Na Windows też działa – instrukcja krok po kroku:
-  [`JAK_NA_WINDOWS.txt`](JAK_NA_WINDOWS.txt).
+  [`JAK_NA_WINDOWS.txt`](JAK_NA_WINDOWS.txt) (wersja angielska: [`WINDOWS_INSTALL.txt`](WINDOWS_INSTALL.txt)).
 - **Karta (karty) NVIDIA** ze sterownikiem obsługującym CUDA 12.8. Domyślnie model jest rozłożony na dwie karty
   (24 GB + 20 GB); jedna karta 48 GB też wystarczy – ustaw `MAX_MEMORY` w usłudze.
 - Ok. 35 GB na wagi modelu, ok. 10 GB na środowiska Pythona, ok. 1 GB na model `rembg` (pobiera się sam przy pierwszym użyciu).
